@@ -1,0 +1,31 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+DigitalCamera=1
+Built-in symbols=0
+[COMPILESTATUS|.\src\pixelCircuitTB.sv]
+FileTimeLow=30848263
+Status=Modified
+[COMPILESTATUS|.\src\re_control.v]
+FileTimeLow=30848263
+Status=Modified
+[COMPILESTATUS|.\src\re_control.sv]
+FileTimeLow=30848290
+Status=Modified
+[COMPILESTATUS|.\src\FSM_ex_control.sv]
+FileTimeLow=30848266
+Status=Modified
+[COMPILESTATUS|.\src\CTRL_ex_time.sv]
+FileTimeLow=30848265
+Status=Modified
+[COMPILESTATUS|.\src\Timer_counter.sv]
+FileTimeLow=30848265
+Status=Modified
+[COMPILESTATUS|.\src\FSM_control.sv]
+FileTimeLow=30848319
+Status=Modified
+[COMPILESTATUS|.\src\CTRL_time.sv]
+FileTimeLow=30848266
+Status=Modified
+[CACHEDOC|Aldec.Project.Generic.7|.\DigitalCamera\DigitalCamera.adf|]
+Path=
+[Gui config]
+RunFor=100 ns

@@ -1,1 +1,4 @@
 i<>.\src\pixelCircuitTB.sv
+i<>.\src\FSM_ex_control.sv
+i<>.\src\CTRL_ex_time.sv
+i<>.\src\Timer_counter.sv

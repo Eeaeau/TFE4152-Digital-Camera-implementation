@@ -14,5 +14,7 @@ module re_control(Expose, Erase, ADC, NRE_1, NRE_2,
 	// Your code goes here
 	//
 	
+	
+	
 endmodule // re_control
 

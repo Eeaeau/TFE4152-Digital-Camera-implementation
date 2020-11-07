@@ -3,22 +3,41 @@ Current Flow=Generic
 VCS=0
 version=4
 Current Config=compile
+
 [Configurations]
 compile=DigitalCamera
+
 [Library]
 DigitalCamera=.\DigitalCamera\DigitalCamera.lib
+
 [$LibMap$]
 DigitalCamera=.
 Active_lib=
+
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VERILOG
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
+
 [Files]
 /pixelCircuitTB.sv=-1
-/re_control.v=-1
+/re_control.sv=-1
+/FSM_control.sv=-1
+/CTRL_time.sv=-1
+/Timer_counter.sv=-1
+
 [Files.Data]
 .\src\pixelCircuitTB.sv=SystemVerilog Source Code
-.\src\re_control.v=Verilog Source Code
+.\src\re_control.sv=SystemVerilog Source Code
+.\src\FSM_control.sv=SystemVerilog Source Code
+.\src\CTRL_time.sv=SystemVerilog Source Code
+.\src\Timer_counter.sv=SystemVerilog Source Code
+
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

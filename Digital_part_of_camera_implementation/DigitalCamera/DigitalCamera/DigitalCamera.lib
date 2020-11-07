@@ -1,29 +1,56 @@
-timestamp=1604754740051
+timestamp=1604779180852
 
 [~A]
+C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/FSM_control.sv=0*12380*13248
+C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/FSM_ex_control.sv=0*3852*4403
+C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/re_control.sv=0*2133*2712
 C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/re_control.v=0*436*1014
-LastVerilogToplevel=re_control
-ModifyID=1
+LastVerilogToplevel=counter
+ModifyID=7
 Version=74
 
 [~MFT]
-0=4|0DigitalCamera.mgf|1014|0
-1=2|1DigitalCamera.mgf|374|0
-3=4|3DigitalCamera.mgf|281|0
+0=7|0DigitalCamera.mgf|13248|4451
+1=6|1DigitalCamera.mgf|15885|11310
+3=12|3DigitalCamera.mgf|8039|5766
 
 [$root]
-A/$root=22|||1*0
-BinI32/$root=3*0
-SLP=3*104
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c92162974a59189a0f9482f18d567ba47fd55
+A/$root=22|||1*13698
+BinI32/$root=3*6267
+SLP=3*6371
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c921658a9704781ce45d344b666b92dc99185
+
+[FSM_control]
+A/FSM_control=22|../src/FSM_control.sv|11|1*14104
+BinI32/FSM_control=3*6439
+R=../src/FSM_control.sv|11
+SLP=3*7131
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|e2905295c085df376108e7dd9e6929ebb4dfa152630eb3e14ae42b0b2be7396b7264059fa53beb36248074f98b8c6ca9
+
+[FSM_ex_control]
+A/FSM_ex_control=22|../src/FSM_ex_control.sv|4|1*3656
+BinI32/FSM_ex_control=3*1010
+R=../src/FSM_ex_control.sv|4
+SLP=3*1123
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|6eea25c209747ab0df3c54983bfd0d75f171980b030435a74b69e1dfef09fb69bf2421bd7f6b403e2a7d73fdc8589a0e
+
+[counter]
+A/counter=22|../src/FSM_control.sv|35|1*15885
+BinI32/counter=3*7645
+R=../src/FSM_control.sv|35
+SLP=3*8039
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|ec8a9ceecd40c97da6d5687ce01e262f26527262ddaa47cb266f3a3c4d9b973a6baef6b1d923284baf24cc35dc0ad776
 
 [re_control]
-A/re_control=22|../src/re_control.v|6|1*374
-BinI32/re_control=3*172
-R=../src/re_control.v|6
-SLP=3*281
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|ab05d3b5e2058478d8e5fdef44d919e6b2b6c8279593bcaaccd0cb94f7187f10c37eaef9cbc9f69c5e6158b5bf464a63
+A/re_control=22|../src/re_control.sv|6|1*2006
+BinI32/re_control=3*591
+R=../src/re_control.sv|6
+SLP=3*700
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|ab05d3b5e2058478d8e5fdef44d919e6b2b6c8279593bcaaccd0cb94f7187f103424a0fd4b3b3faf84202a49e3dd53df
 
 [~U]
-$root=12|0*0|
-re_control=12|0*166||0x10
+$root=12|0*11659|
+FSM_control=12|0*11857||0x10
+FSM_ex_control=12|0*3594||0x10
+counter=12|0*12171||0x10
+re_control=12|0*1863||0x10
