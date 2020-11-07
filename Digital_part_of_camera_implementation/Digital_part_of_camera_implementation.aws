@@ -1,0 +1,12 @@
+[Version]
+Version=11.1
+[Designs]
+digitalcamera=.\DigitalCamera\DigitalCamera.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+digitalcamera=1
