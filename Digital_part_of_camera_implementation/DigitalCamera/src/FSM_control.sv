@@ -8,36 +8,51 @@ A=idle, B=exposure, C=readout
 
 
 
-module FSM_control (input logic init, clk, reset, ovf, output logic NRE_1, NRE_2, ADC, expose, erase, start_time);
-	typedef enum logic [2:0] {A, B, C} statetype;
+module FSM_control (
+	input logic 
+	init, 
+	clk, 
+	reset, 
+	ovf, 
+	output logic 
+	NRE_1, 
+	NRE_2, 
+	ADC, 
+	expose, 
+	erase, 
+	start_time,
+	);
+	
+	typedef enum logic [2:0] {Idle, Exp, Read} statetype;
 	
 	statetype currentState, nextState;
 	
 	always_ff @(posedge clk)
-	if(reset) currentState = A;
+	if(reset) begin 
+			currentState = Idle;
+			assign erase = 1;
+		end
 	else currentState = nextState;
 	
 	always_comb
 	case(currentState)
-		A: if(init & !reset) nextState = B;
-			else nextState = A;
-		B:
-			if(ovf) nextState = C;
-			else nextState = A;
-		C:
-			if(reset | ovf) nextState = A;
-		
-		default: nextState = A;
+		Idle: if(init & !reset) begin 
+					nextState = Exp;
+					assign erase = 0;
+					assign expose = 1;
+				end
+		Exp: if(ovf) begin 
+					nextState = Read;
+					assign expose = 0; 	
+				end
+		Read: if(reset | ovf) begin 
+			nextState = Idle; //#10;
+			//for (int i=0; i<60000; i=i+1) @(posedge clk);
+			//assign NRE_1 = 0;
+			//assign NRE_2 = 0;
+				end
+		default: nextState = Idle;
 	endcase
-	
-endmodule
+endmodule	
 
 
-
-module counter(input logic clk,
-	input logic reset,
-	output logic [3:0] q);
-	always_ff @(posedge clk)
-	if (reset) q <= 4'b0;
-	else q <= q+1;
-endmodule

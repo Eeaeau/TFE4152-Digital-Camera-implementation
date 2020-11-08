@@ -9,14 +9,13 @@ UPDATEPROGRESS 80
 MESSAGE "Running Optimizer."
 MESSAGE "ELB/DAG code generating."
 MESSAGE_SP VCP2113 "Module \$root found in current working library."
-UPDATEPROGRESS 83
-UPDATEPROGRESS 86
-UPDATEPROGRESS 90
-UPDATEPROGRESS 93
+UPDATEPROGRESS 84
+UPDATEPROGRESS 88
+UPDATEPROGRESS 92
 UPDATEPROGRESS 96
 UPDATEPROGRESS 100
-MESSAGE "Unit top modules: FSM_control counter."
-MESSAGE "$root top modules: re_control FSM_ex_control FSM_control counter."
+MESSAGE "Unit top modules: CTRL_exp_time."
+MESSAGE "$root top modules: re_control FSM_ex_control FSM_control counter Time_counter CTRL_exp_time."
 ENDPROGRESS Compiling...
 SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
 WARNING ALOG: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."

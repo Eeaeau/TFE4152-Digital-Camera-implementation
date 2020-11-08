@@ -1,10 +1,16 @@
-7
+37
 ~M 0 "" 0 $root
 ~A 1 "" 0 $root
+~M 3 "../src/CTRL_exp_time.sv" 4 CTRL_exp_time
+~A 1 "../src/CTRL_exp_time.sv" 4 CTRL_exp_time
+~M 1 "../src/CTRL_time.sv" 4 CTRL_time
+~A 1 "../src/CTRL_time.sv" 4 CTRL_time
 ~M 3 "../src/FSM_control.sv" 11 FSM_control
 ~A 1 "../src/FSM_control.sv" 11 FSM_control
 ~M 3 "../src/FSM_ex_control.sv" 4 FSM_ex_control
 ~A 1 "../src/FSM_ex_control.sv" 4 FSM_ex_control
+~M 3 "../src/Timer_counter.sv" 3 Time_counter
+~A 1 "../src/Timer_counter.sv" 3 Time_counter
 ~M 3 "../src/FSM_control.sv" 35 counter
 ~A 1 "../src/FSM_control.sv" 35 counter
 ~M 3 "../src/re_control.sv" 6 re_control

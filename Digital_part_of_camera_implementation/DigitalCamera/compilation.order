@@ -1,5 +1,5 @@
 .\src\pixelCircuitTB.sv
 .\src\re_control.sv
 .\src\FSM_control.sv
-.\src\CTRL_time.sv
+.\src\CTRL_exp_time.sv
 .\src\Timer_counter.sv

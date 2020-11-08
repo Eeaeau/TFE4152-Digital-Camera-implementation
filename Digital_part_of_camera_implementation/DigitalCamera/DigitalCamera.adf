@@ -21,23 +21,25 @@ REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
 
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
 [Files]
 /pixelCircuitTB.sv=-1
 /re_control.sv=-1
 /FSM_control.sv=-1
-/CTRL_time.sv=-1
+/CTRL_exp_time.sv=-1
 /Timer_counter.sv=-1
 
 [Files.Data]
 .\src\pixelCircuitTB.sv=SystemVerilog Source Code
 .\src\re_control.sv=SystemVerilog Source Code
 .\src\FSM_control.sv=SystemVerilog Source Code
-.\src\CTRL_time.sv=SystemVerilog Source Code
+.\src\CTRL_exp_time.sv=SystemVerilog Source Code
 .\src\Timer_counter.sv=SystemVerilog Source Code
 
-[SpecTracer]
-WindowVisible=0
-[HierarchyViewer]
-HierarchyInformation=
-ShowHide=ShowTopLevel
-Selected=
