@@ -1,11 +1,9 @@
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\DigitalCamera\src/pixelCircuitTB.sv|]
-TemplateId=24
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\DigitalCamera\src/re_control.sv|]
-TemplateId=2
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\DigitalCamera\src/FSM_control.sv|]
 TemplateId=24
 ActiveDocument=1
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\DigitalCamera\src/CTRL_time.sv|]
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\DigitalCamera\src/CTRL_exp_time.sv|]
 TemplateId=24
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\DigitalCamera\src/Timer_counter.sv|]
+TemplateId=24
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\DigitalCamera\src/re_control.sv|]
 TemplateId=24

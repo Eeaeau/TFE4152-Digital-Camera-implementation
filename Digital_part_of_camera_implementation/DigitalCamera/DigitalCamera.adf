@@ -43,3 +43,5 @@ Selected=
 .\src\CTRL_exp_time.sv=SystemVerilog Source Code
 .\src\Timer_counter.sv=SystemVerilog Source Code
 
+[ORDER]
+Synchronize=1

@@ -1,0 +1,24 @@
+Active-HDL 11.1.262.7351 2020-11-08 23:02:26
+
+Elaboration top modules:
+Verilog Module                Time_counter_TB
+
+
+-----------------------------------------------------------------------------------------------
+Verilog Module          | Library       | Info | Compiler Version        | Compilation Options
+-----------------------------------------------------------------------------------------------
+Time_counter_TB         | digitalcamera |      | 11.1.262.7351 (Windows) | -O2 -sv2k12
+Time_counter            | digitalcamera |      | 11.1.262.7351 (Windows) | -O2 -sv2k12
+-----------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------
+Library                 | Comment
+-----------------------------------------------------------------------------------------------
+digitalcamera           | None
+-----------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+Time_counter_TB Time_counter_TB
+
+
+The performance of simulation is reduced. Version Student Edition
