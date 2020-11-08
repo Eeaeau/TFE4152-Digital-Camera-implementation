@@ -9,21 +9,26 @@ module Time_counter(
 	output logic 
 	ovf);
 	
-	reg [5:0] q = Exp_time;
-	//wait( == 1);
+	reg [5:0] q;
 	
-	always @(posedge clk)
-		wait(start);		
 	
 	always_ff @(posedge clk)
-
-	assign ovf = !ovf;
-	/*
-	if (reset) assign q = Exp_time;
-	else if(q == 0)	assign ovf = 1;
-	else assign q = Exp_time - 1;
-	*/
-	initial assign ovf = 0;	
+	if(reset) 
+		q <= Exp_time;
+	else if (start) 
+		q <= q - 5'b1;
+	
+	always @(*)
+		if (q <= 5'b1) ovf = 1;
+		else ovf = 0;
+	
+	
+	//assign ovf = (q <= 1) ? 1 : 0;
+	
+	//initial assign ovf = 0;	
+	
+	
+	//assign ovf = (q <= 5'd1) ? 1 : 0;	
 	
 endmodule // Time_counter 
 
@@ -40,12 +45,12 @@ module Time_counter_TB();
 	
 	//reg [2:0] comb = 2'b0;
 	
-	Time_counter timeCounter (Exp_time,
-		start,
-		clk,
-		reset,
-		ovf);
-
+	Time_counter timeCounter (.Exp_time(Exp_time),
+		.start(start),
+		.clk(clk),
+		.reset(reset),
+		.ovf(ovf));
+	
 	
 	// generate clock
 	always
@@ -68,12 +73,13 @@ module Time_counter_TB();
 	*/
 	
 	initial	begin
-			start = 0; reset = 0; 
-			Exp_time = 5'b01000; #4;
-			start = 1; #20;
-			$finish;
+			start = 0; reset = 1;
+			Exp_time = 5'b01000; #1;
+			start = 1; reset = 0; #20;
+			
 		end
-	
+	always @(*)
+	 if (ovf == 1) $finish;
 	
 	
 	
