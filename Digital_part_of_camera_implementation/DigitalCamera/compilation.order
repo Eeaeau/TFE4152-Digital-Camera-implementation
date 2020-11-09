@@ -1,5 +1,6 @@
-.\src\pixelCircuitTB.sv
+.\src\DigitalCameraComp.sv
 .\src\re_control.sv
 .\src\FSM_control.sv
 .\src\CTRL_exp_time.sv
 .\src\Timer_counter.sv
+.\src\DigitalCameraComp_testVectors.sv

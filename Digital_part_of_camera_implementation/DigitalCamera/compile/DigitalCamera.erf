@@ -2,21 +2,30 @@ MESSAGE "Pass 1. Scanning modules hierarchy."
 MESSAGE_SP VCP2113 "Module \$root found in current working library."
 BEGINPROGRESS Compiling...
 UPDATEPROGRESS 35
+MESSAGE_SP VCP2113 "Module FSM_control found in current working library."
+MESSAGE_SP VCP2123 "Package UnitScopePackage_142 found in current working library."
+MESSAGE_SP VCP2113 "Module CTRL_exp_time found in current working library."
+MESSAGE_SP VCP2113 "Module Time_counter found in current working library."
 MESSAGE "Pass 2. Processing instantiations."
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol start_time has not been declared in module re_control." "C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/re_control.sv" 30  19
 UPDATEPROGRESS 45
 MESSAGE "Pass 3. Processing behavioral statements."
 UPDATEPROGRESS 80
 MESSAGE "Running Optimizer."
 MESSAGE "ELB/DAG code generating."
 MESSAGE_SP VCP2113 "Module \$root found in current working library."
-UPDATEPROGRESS 83
+UPDATEPROGRESS 82
+UPDATEPROGRESS 84
 UPDATEPROGRESS 86
+UPDATEPROGRESS 88
 UPDATEPROGRESS 90
-UPDATEPROGRESS 93
+UPDATEPROGRESS 92
+UPDATEPROGRESS 94
 UPDATEPROGRESS 96
+UPDATEPROGRESS 98
 UPDATEPROGRESS 100
-MESSAGE "Unit top modules: Time_counter_TB."
-MESSAGE "$root top modules: re_control FSM_ex_control counter FSM_control_TB CTRL_exp_time_TB Time_counter_TB."
+MESSAGE "Unit top modules: re_control_TB."
+MESSAGE "$root top modules: FSM_ex_control counter FSM_control_TB CTRL_exp_time_TB Time_counter_TB re_control_TB."
 ENDPROGRESS Compiling...
 SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
 WARNING ALOG: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."

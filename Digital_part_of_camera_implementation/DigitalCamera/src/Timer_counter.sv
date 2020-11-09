@@ -19,7 +19,7 @@ module Time_counter(
 		q <= q - 5'b1;
 	
 	always @(*)
-		if (q <= 5'b1) ovf = 1;
+		if (q < 5'b1) ovf = 1;
 		else ovf = 0;
 	
 	

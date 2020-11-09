@@ -1,14 +1,24 @@
-Active-HDL 11.1.262.7351 2020-11-09 00:54:08
+Active-HDL 11.1.262.7351 2020-11-09 20:28:44
 
 Elaboration top modules:
-Verilog Module                Time_counter_TB
+Verilog Module                re_control_TB
+SystemVerilog Package         UnitScopePackage_118
 
 
 -----------------------------------------------------------------------------------------------
 Verilog Module          | Library       | Info | Compiler Version        | Compilation Options
 -----------------------------------------------------------------------------------------------
-Time_counter_TB         | digitalcamera |      | 11.1.262.7351 (Windows) | -O2 -sv2k12
+re_control_TB           | digitalcamera |      | 11.1.262.7351 (Windows) | -O2 -sv2k12
+re_control              | digitalcamera |      | 11.1.262.7351 (Windows) | -O2 -sv2k12
+FSM_control             | digitalcamera |      | 11.1.262.7351 (Windows) | -O2 -sv2k12
+CTRL_exp_time           | digitalcamera |      | 11.1.262.7351 (Windows) | -O2 -sv2k12
 Time_counter            | digitalcamera |      | 11.1.262.7351 (Windows) | -O2 -sv2k12
+-----------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------
+SystemVerilog Package   | Library       | Info | Compiler Version        | Compilation Options
+-----------------------------------------------------------------------------------------------
+UnitScopePackage_118    | digitalcamera |      | 11.1.262.7351 (Windows) | -O2 -sv2k12
 -----------------------------------------------------------------------------------------------
 
 -----------------------------------------------------------------------------------------------
@@ -16,9 +26,3 @@ Library                 | Comment
 -----------------------------------------------------------------------------------------------
 digitalcamera           | None
 -----------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+Time_counter_TB Time_counter_TB
-
-
-The performance of simulation is reduced. Version Student Edition

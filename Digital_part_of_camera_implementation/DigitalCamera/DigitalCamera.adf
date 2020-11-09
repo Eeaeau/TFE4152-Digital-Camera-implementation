@@ -29,19 +29,24 @@ HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
 
+[ORDER]
+Synchronize=1
+
 [Files]
-/pixelCircuitTB.sv=-1
+/DigitalCameraComp.sv=-1
 /re_control.sv=-1
 /FSM_control.sv=-1
 /CTRL_exp_time.sv=-1
 /Timer_counter.sv=-1
+/DigitalCameraComp_testVectors.sv=-1
+/re_control_testVectors.txt=-1
 
 [Files.Data]
-.\src\pixelCircuitTB.sv=SystemVerilog Source Code
+.\src\DigitalCameraComp.sv=SystemVerilog Source Code
 .\src\re_control.sv=SystemVerilog Source Code
 .\src\FSM_control.sv=SystemVerilog Source Code
 .\src\CTRL_exp_time.sv=SystemVerilog Source Code
 .\src\Timer_counter.sv=SystemVerilog Source Code
+.\src\DigitalCameraComp_testVectors.sv=SystemVerilog Source Code
+.\src\re_control_testVectors.txt=Text File
 
-[ORDER]
-Synchronize=1

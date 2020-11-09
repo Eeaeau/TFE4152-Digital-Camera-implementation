@@ -2,3 +2,5 @@ i<>.\src\pixelCircuitTB.sv
 i<>.\src\FSM_ex_control.sv
 i<>.\src\CTRL_ex_time.sv
 i<>.\src\Timer_counter.sv
+i<>.\src\DigitalCameraComp_testVectors.sv
+i<>.\src\re_control_testVectors.sv
