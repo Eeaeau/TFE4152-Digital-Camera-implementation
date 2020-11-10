@@ -12,7 +12,7 @@ module re_control(
 	//
 	// Your code goes here
 	//
-	logic start, reset_count, ovf;
+	logic start_time, reset_count, ovf4, ovf5;
 	reg [5:0] Countdown_time;
 	
 	statetype currentState, nextState;
@@ -21,15 +21,15 @@ module re_control(
 	FSM_control fsmControl (init, 
 		clk, 
 		reset, 
-		ovf,
+		ovf4,
+		ovf5,
 		NRE_1, 
 		NRE_2, 
 		ADC_enable, 
 		expose, 
 		erase, 
-		start_time, 
-		currentState, 
-		nextState);
+		start_time);
+	//currentState,nextState 
 	
 	
 	// counter control unit
@@ -41,14 +41,26 @@ module re_control(
 	
 	// counter unit
 	Time_counter timeCounter(Countdown_time,
-		start,
+		start_time,
 		clk,
 		reset,
-		ovf);
+		ovf5);
+		
+	always @(negedge expose) begin
+		#4 ovf4 <= 1; #1 ovf4<=0;
+		#4 ovf4 <= 1; #1 ovf4<=0;
+		end
 	
+	/*	
+	always @(posedge clk) begin
 	
+	if(!erase & !expose) begin
+	Countdown_time <= 5'b100;
+	end
 	
+	end
 	
+	*/
 	
 endmodule // re_control
 
@@ -65,8 +77,8 @@ module re_control_TB();
 	re_control dut(init, Exp_increase, Exp_decrease, reset, clk, expose, erase, ADC_enable, NRE_1, NRE_2);
 	
 	reg [31:0] vectornum;
-	reg [4:0] testVectors[10:0];
-	
+	reg [4:0] testVectors[100:0];
+						 
 	
 	// generate clock
 	always
@@ -81,7 +93,7 @@ module re_control_TB();
 	initial begin
 			$readmemb("re_control_testVectors.txt", testVectors);
 			vectornum = 0;
-			reset = 1; #1; reset = 0;
+			//reset = 1; #1; reset = 0;
 			
 			
 		end
@@ -93,15 +105,16 @@ module re_control_TB();
 		end
 	
 	always @(negedge clk)begin
-		/*
-		if (~reset) begin // skip during reset
-				vectornum = vectornum + 1;
-				
-		end	
-		*/
-		vectornum <= vectornum + 1;
-		if (testVectors[vectornum] === 'bx) begin
-						$finish;
-					end
-	 end
+			/*
+			if (~reset) begin // skip during reset
+			vectornum = vectornum + 1;
+			
+			end	
+			*/
+			vectornum <= vectornum + 1;
+			if (testVectors[vectornum] === 4'bx) begin
+					$finish;
+			end
+			if (vectornum == 24) $finish;
+		end
 endmodule

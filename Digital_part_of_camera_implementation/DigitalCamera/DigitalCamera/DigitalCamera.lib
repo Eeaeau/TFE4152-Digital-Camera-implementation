@@ -1,42 +1,42 @@
-timestamp=1605017875712
+timestamp=1605042281615
 
 [~A]
-C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/CTRL_exp_time.sv=0*362240*363142
+C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/CTRL_exp_time.sv=0*552460*553362
 C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/CTRL_time.sv=0*16117*16647
-C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/FSM_control.sv=0*465633*467014
+C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/FSM_control.sv=0*735537*737382
 C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/FSM_ex_control.sv=0*3852*4403
 C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/Timer_counter.sv=0*354435*355321
-C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/re_control.sv=0*453202*454374
+C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/re_control.sv=0*642670*643890
 C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/re_control.v=0*436*1014
-CUSP_Counter=148
+CUSP_Counter=231
 LastVerilogToplevel=FSM_control_TB
-ModifyID=186
+ModifyID=269
 Version=74
 
 [~MFT]
-0=9|0DigitalCamera.mgf|467014|294589
-1=8|1DigitalCamera.mgf|776535|694017
-3=16|3DigitalCamera.mgf|445078|408161
+0=9|0DigitalCamera.mgf|737382|492841
+1=8|1DigitalCamera.mgf|1333425|1246309
+3=16|3DigitalCamera.mgf|812617|772765
 
 [$root]
-A/$root=22|||1*770548
-BinI32/$root=3*440419
-SLP=3*440523
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c921610c228c02b3853f4c6c17269da1205b5
+A/$root=22|||1*1326364
+BinI32/$root=3*806736
+SLP=3*806840
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216f219037d3b7663c17a07475cd1523780
 
 [CTRL_exp_time]
-A/CTRL_exp_time=22|../src/CTRL_exp_time.sv|4|1*574713
-BinI32/CTRL_exp_time=3*349383
+A/CTRL_exp_time=22|../src/CTRL_exp_time.sv|4|1*945294
+BinI32/CTRL_exp_time=3*540105
 R=../src/CTRL_exp_time.sv|4
-SLP=3*350085
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|7746c85b6f75222aaf89bc9f72db3ae5d885d19ae9bcc07a89e7b9d55dfa1f68a67c0ee44021613e6b36ff1863e32c15
+SLP=3*540807
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|7746c85b6f75222aaf89bc9f72db3ae5d885d19ae9bcc07a89e7b9d55dfa1f68c10e5bc8ffcc1256d878048cf676c935
 
 [CTRL_exp_time_TB]
-A/CTRL_exp_time_TB=22|../src/CTRL_exp_time.sv|26|1*575971
-BinI32/CTRL_exp_time_TB=3*350458
+A/CTRL_exp_time_TB=22|../src/CTRL_exp_time.sv|26|1*946552
+BinI32/CTRL_exp_time_TB=3*541180
 R=../src/CTRL_exp_time.sv|26
-SLP=3*351169
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|7746c85b6f75222aaf89bc9f72db3ae56fbefa14ffea956b351501bcac402c4b3864ed21072e8577b5f42ad5935bf4dc
+SLP=3*541891
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|7746c85b6f75222aaf89bc9f72db3ae56fbefa14ffea956b351501bcac402c4b6eab2988943c05a30df0d74c7a0d4564
 
 [CTRL_time]
 A/CTRL_time=22|../src/CTRL_time.sv|4|1*18731
@@ -46,19 +46,19 @@ SLP=3*9398
 Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|57be92c09e02b643869188ea1e6b560d3875e3a0a9d0f8a6f4079407858f023edbbe7d6707a9a29e9fa707a944ea00ac
 
 [FSM_control]
-A/FSM_control=22|../src/FSM_control.sv|13|1*770986
-BinI32/FSM_control=3*440591
-CUSP=UnitScopePackage_148
+A/FSM_control=22|../src/FSM_control.sv|13|1*1326802
+BinI32/FSM_control=3*806908
+CUSP=UnitScopePackage_231
 R=../src/FSM_control.sv|13
-SLP=3*442489
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|e2905295c085df376108e7dd9e6929ebb4dfa152630eb3e14ae42b0b2be7396bbc06a366fee31219fa7ebbf201ee8aa7
+SLP=3*809009
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|e2905295c085df376108e7dd9e6929ebb4dfa152630eb3e14ae42b0b2be7396b33063c9b72e8a93823f02715d8890a49
 
 [FSM_control_TB]
-A/FSM_control_TB=22|../src/FSM_control.sv|125|1*774466
-BinI32/FSM_control_TB=3*443808
-R=../src/FSM_control.sv|125
-SLP=3*444519
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|447251ae7c7b7b2c83aa9b27f3066033cfdcadb2170234d4527b622ef8020632001271c1082cae5e0df95e18632d1dff
+A/FSM_control_TB=22|../src/FSM_control.sv|181|1*1330705
+BinI32/FSM_control_TB=3*810696
+R=../src/FSM_control.sv|181
+SLP=3*811790
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|447251ae7c7b7b2c83aa9b27f3066033cfdcadb2170234d4527b622ef80206326a4f0e39368f0e1f95872e12d5b8070d
 
 [FSM_ex_control]
 A/FSM_ex_control=22|../src/FSM_ex_control.sv|4|1*3656
@@ -369,21 +369,53 @@ R=../src/re_control.sv|0
 SLP=3*417536
 Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53e67f2b36b3261b1691fcec84e9c9c8c71f52dbdcce01a08bb41e0eb9d29e7130b
 
-[UnitScopePackage_144]
-A/UnitScopePackage_144=22|../src/re_control.sv|0|1*750589
-BinI32/UnitScopePackage_144=3*426195
-CUSP=1
+[UnitScopePackage_149]
+A/UnitScopePackage_149=22|../src/re_control.sv|0|1*782266
+BinI32/UnitScopePackage_149=3*447443
+CUSP=0
 R=../src/re_control.sv|0
-SLP=3*426314
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53e43054bbd908ffa8322b37f2ca5d7504ab42c01a2833254a79cd1fb1f8a0cd9d5
+SLP=3*447562
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53ecd595c1cc6bc207b4153e0a098e13b4737c7aec48eef5646f0920981aa960222
 
-[UnitScopePackage_148]
-A/UnitScopePackage_148=22|../src/FSM_control.sv|0|1*776535
-BinI32/UnitScopePackage_148=3*444959
-CUSP=1
-R=../src/FSM_control.sv|0
-SLP=3*445078
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53eaa519461c17dd33528302de391e31e8ed6c8037b1510001b2d823d250db21102
+[UnitScopePackage_150]
+A/UnitScopePackage_150=22|../src/re_control.sv|0|1*787996
+BinI32/UnitScopePackage_150=3*449915
+CUSP=0
+R=../src/re_control.sv|0
+SLP=3*450034
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53e8af5f9d2c2c06652d211148fcc4dbef303d14455a390366d65dd61eda113f804
+
+[UnitScopePackage_153]
+A/UnitScopePackage_153=22|../src/re_control.sv|0|1*806709
+BinI32/UnitScopePackage_153=3*461711
+CUSP=0
+R=../src/re_control.sv|0
+SLP=3*461830
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53e2dd47b9222aba2783d346f77a09ba7e20630a1e15ae7e2f6c90aac3b33ac6ef5
+
+[UnitScopePackage_154]
+A/UnitScopePackage_154=22|../src/re_control.sv|0|1*812439
+BinI32/UnitScopePackage_154=3*464183
+CUSP=0
+R=../src/re_control.sv|0
+SLP=3*464302
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53e64df7a74d600efeb1ba0dad7d6d29fc19f76ce865cc505176549f58504b1ebdd
+
+[UnitScopePackage_157]
+A/UnitScopePackage_157=22|../src/re_control.sv|0|1*831015
+BinI32/UnitScopePackage_157=3*476102
+CUSP=0
+R=../src/re_control.sv|0
+SLP=3*476221
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53e3aa470db921495cc705095941f1f45fec2f5cdd7a7e0b272801f5aa9f96d7f60
+
+[UnitScopePackage_176]
+A/UnitScopePackage_176=22|../src/CTRL_exp_time.sv|0|1*948265
+BinI32/UnitScopePackage_176=3*542332
+CUSP=0
+R=../src/CTRL_exp_time.sv|0
+SLP=3*542451
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53efbad72ee84282ff424c2431f7554deef82fb11184a748b61421c17d40d5e93e1
 
 [UnitScopePackage_2]
 A/UnitScopePackage_2=22|../src/re_control.sv|0|1*82938
@@ -392,6 +424,22 @@ CUSP=0
 R=../src/re_control.sv|0
 SLP=3*45164
 Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53eb41e615236959a14b894b0ba59bdfaea0e5c0f8c85cee008371307910e8b4b61
+
+[UnitScopePackage_204]
+A/UnitScopePackage_204=22|../src/re_control.sv|0|1*1135939
+BinI32/UnitScopePackage_204=3*665644
+CUSP=1
+R=../src/re_control.sv|0
+SLP=3*665763
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53e82c2566568516074770b56e0620c631010631f9d827b9a08195d7168b3957bd3
+
+[UnitScopePackage_231]
+A/UnitScopePackage_231=22|../src/FSM_control.sv|0|1*1333425
+BinI32/UnitScopePackage_231=3*812498
+CUSP=1
+R=../src/FSM_control.sv|0
+SLP=3*812617
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53e6441975bef40d145ff55511653dfed7f36adafcd097960fae96a2729e0ee6d4f
 
 [UnitScopePackage_27]
 A/UnitScopePackage_27=22|../src/CTRL_exp_time.sv|0|1*218131
@@ -1001,27 +1049,27 @@ SLP=3*8039
 Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|ec8a9ceecd40c97da6d5687ce01e262f26527262ddaa47cb266f3a3c4d9b973a6baef6b1d923284baf24cc35dc0ad776
 
 [re_control]
-A/re_control=22|../src/re_control.sv|7|1*745477
-BinI32/re_control=3*424102
-CUSP=UnitScopePackage_144
+A/re_control=22|../src/re_control.sv|7|1*1130716
+BinI32/re_control=3*663152
+CUSP=UnitScopePackage_204
 R=../src/re_control.sv|7
-SLP=3*424211
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|ab05d3b5e2058478d8e5fdef44d919e6b2b6c8279593bcaaccd0cb94f7187f10d700460af0318c8992f9a32707fa0acb
+SLP=3*663533
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|ab05d3b5e2058478d8e5fdef44d919e6b2b6c8279593bcaaccd0cb94f7187f10024c8420853ce2a5860ffefe56efadda
 
 [re_control_TB]
-A/re_control_TB=22|../src/re_control.sv|57|1*748123
-BinI32/re_control_TB=3*424364
-R=../src/re_control.sv|57
-SLP=3*425503
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|dd00d5c884894cac82950ca0003695d859d26f0b55162f41cc9102440ac3c060a50c06da10243e3b6e0916bd97976cfc
+A/re_control_TB=22|../src/re_control.sv|69|1*1133469
+BinI32/re_control_TB=3*663855
+R=../src/re_control.sv|69
+SLP=3*664952
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|dd00d5c884894cac82950ca0003695d859d26f0b55162f41cc9102440ac3c0606646ae20c5f494680dcc0ef2f6d3a7ee
 
 [~U]
-$root=12|0*464558|
-CTRL_exp_time=12|0*361564|
-CTRL_exp_time_TB=12|0*361811||0x10
+$root=12|0*734459|
+CTRL_exp_time=12|0*551783|
+CTRL_exp_time_TB=12|0*552030||0x10
 CTRL_time=12|0*15881|
-FSM_control=12|0*464900|
-FSM_control_TB=12|0*465200||0x10
+FSM_control=12|0*734801|
+FSM_control_TB=12|0*735106||0x10
 FSM_ex_control=12|0*3594||0x10
 Time_counter=12|0*353763|
 Time_counter_TB=12|0*354008||0x10
@@ -1061,9 +1109,15 @@ UnitScopePackage_138=12|0*435001||0x40200000
 UnitScopePackage_139=12|0*437946||0x40200000
 UnitScopePackage_140=12|0*440907||0x40200000
 UnitScopePackage_141=12|0*443868||0x40200000
-UnitScopePackage_144=12|0*452949||0x40200000
-UnitScopePackage_148=12|0*465379||0x40200000
+UnitScopePackage_149=12|0*468590||0x40200000
+UnitScopePackage_150=12|0*471558||0x40200000
+UnitScopePackage_153=12|0*480866||0x40200000
+UnitScopePackage_154=12|0*483833||0x40200000
+UnitScopePackage_157=12|0*493144||0x40200000
+UnitScopePackage_176=12|0*552214||0x40200000
 UnitScopePackage_2=12|0*74954||0x40200000
+UnitScopePackage_204=12|0*642425||0x40200000
+UnitScopePackage_231=12|0*735285||0x40200000
 UnitScopePackage_27=12|0*145068||0x40200000
 UnitScopePackage_28=12|0*147642||0x40200000
 UnitScopePackage_29=12|0*150232||0x40200000
@@ -1140,5 +1194,5 @@ UnitScopePackage_97=12|0*323500||0x40200000
 UnitScopePackage_98=12|0*326053||0x40200000
 UnitScopePackage_99=12|0*328622||0x40200000
 counter=12|0*12171||0x10
-re_control=12|0*452396|
-re_control_TB=12|0*452738||0x10
+re_control=12|0*641873|
+re_control_TB=12|0*642214||0x10

@@ -40,6 +40,7 @@ Synchronize=1
 /Timer_counter.sv=-1
 /DigitalCameraComp_testVectors.sv=-1
 /re_control_testVectors.txt=-1
+/FSM_control_testVectors.txt=-1
 
 [Files.Data]
 .\src\DigitalCameraComp.sv=SystemVerilog Source Code
@@ -50,3 +51,4 @@ Synchronize=1
 .\src\DigitalCameraComp_testVectors.sv=SystemVerilog Source Code
 .\src\re_control_testVectors.txt=Text File
 
+.\src\FSM_control_testVectors.txt=Text File

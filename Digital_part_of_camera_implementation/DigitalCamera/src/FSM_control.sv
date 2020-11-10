@@ -15,7 +15,8 @@ module FSM_control (
 	init, 
 	clk, 
 	reset, 
-	ovf, 
+	ovf4,
+	ovf5,
 	output logic 	 
 	NRE_1, 
 	NRE_2, 
@@ -25,10 +26,10 @@ module FSM_control (
 	start_time
 	);
 	// output statetype currentState, nextState
-	
 	statetype currentState, nextState;
 	
-	logic skip; // logic for skipping clk cycle
+	
+	logic skip, row; // logic for skipping clk cycle
 	
 	always_ff @(posedge clk)
 	if(reset) begin 
@@ -36,98 +37,145 @@ module FSM_control (
 		end
 	else currentState = nextState;
 	
-	// implimentation on FSM stages
+	
+	// conditional within state
+	always @(posedge clk) begin
+			case(currentState)
+				Idle: 
+					//reset skip
+					if (skip) skip <= 0;
+					// start exposing
+					else if(init & !reset) begin 
+							//nextState = Exp;
+							assign erase = 0;
+							assign expose = 1;
+							assign start_time =1;
+							skip <= 0;
+						end
+					// set idle state 
+					else begin 
+							assign {NRE_1, 
+								NRE_2, 
+								ADC_enable, 
+								expose, 
+								erase, 
+								start_time} = 6'b110010;
+							skip <= 0;
+							row <=0;
+						end
+				
+				Exp: if(ovf5) begin 
+							//nextState = Read_R1;
+							assign expose = 0;
+							assign start_time = 0;
+							//skip <= 1;
+							row <=0;
+						end
+				
+				Read_R1: begin
+						// reading prosedure for row 0
+						// Go to next read stage
+						if(ovf4) begin 
+								//nextState = Read_R2;
+								skip <= 1;
+							end
+						//else if (ADC_enable) assign ADC_enable = 0;
+						// end adc
+						else if (ADC_enable) begin 
+								assign ADC_enable = 0;
+								skip <= 1;
+							end
+						// start adc
+						else if ((~skip) & (NRE_1)) begin 
+								assign ADC_enable = 1;	
+							end
+						
+						// start first read
+						else if (~skip) begin 
+								assign NRE_1 = 0;
+								skip <= 1;
+								
+							end
+						// wait skip cycle
+						else begin 
+								skip <= 0;
+								assign start_time =!start_time ;
+							end
+					end
+				Read_R2:
+					// reading prosedure for row 1
+					// Go to next read stage
+					if(ovf4 & NRE_2 & !ADC_enable) begin 
+							//nextState = Idle;
+							skip <= 1;
+						end
+					// start adc
+					else if (!skip & !NRE_2) begin 
+							assign ADC_enable = 1;
+							
+						end
+					// end adc
+					else if (ADC_enable) begin 
+							assign ADC_enable = 0;
+							skip <= 1;
+						end
+					// start first read
+					else if (!skip) begin 
+							assign NRE_2 = 0;
+							skip <= 1;		
+						end
+					// wait skip cycle
+					else  skip <= 0;
+				//default: nextState = Idle;
+			endcase
+		end // always @(posedge clk)
+	
+		
+	// implimentation on FSM transitions
 	always_comb
 	case(currentState)
-		Idle: if(init & !reset) begin 
-					nextState = Exp;
-					assign erase = 0;
-					assign expose = 1;
-				end
-			else if(!skip) begin 
-					assign {NRE_1, 
-						NRE_2, 
-						ADC_enable, 
-						expose, 
-						erase, 
-						start_time} = 6'b110000;
-				end
-			else assign skip = 0;
-		Exp: if(ovf) begin 
+		Idle: if (init & !reset) nextState = Exp;
+		
+		Exp: if(ovf5) begin 
 					nextState = Read_R1;
-					assign expose = 0;
-					assign skip = 1;					
+					//assign expose = 0;
+					//assign start_time = 0;
 				end
-		Read_R1: 
-			// Go to next read stage
-			if(ovf & NRE_1 & !ADC_enable) begin 
-					nextState = Read_R2;
-					assign skip = 1;
-				end
-			// start adc
-			else if (!skip & !NRE_1) begin 
-					assign ADC_enable = 1;
-					
-				end
-			// end adc
-			else if (ADC_enable) begin 
-					assign ADC_enable = 0;
-					assign skip = 1;
-				end
-			// start first read
-			else if (!skip) begin 
-					assign NRE_1 = 0;
-					assign skip = 1;
-					
-				end
-			// wait skip cycle
-			else assign skip = 1;
 		
-		Read_R2: 
+		Read_R1: begin
+				// reading prosedure for row 0
+				// Go to next read stage
+				if(ovf4) begin 
+						nextState = Read_R2;
+				end
+			end
+		Read_R2:
+			// reading prosedure for row 1
 			// Go to next read stage
-			if(ovf & NRE_2 & !ADC_enable) begin 
+			if(ovf4 & NRE_2 & !ADC_enable) begin 
 					nextState = Idle;
-					assign skip = 1;
 				end
-			// start adc
-			else if (!skip & !NRE_2) begin 
-					assign ADC_enable = 1;
-					
-				end
-			// end adc
-			else if (ADC_enable) begin 
-					assign ADC_enable = 0;
-					assign skip = 1;
-				end
-			// start first read
-			else if (!skip) begin 
-					assign NRE_2 = 0;
-					assign skip = 1;		
-				end
-			// wait skip cycle
-			else assign skip = 1;
-		
 		default: nextState = Idle;
-	endcase
+	endcase // always_comb
 	
-	initial
-		assign {NRE_1, 
-			NRE_2, 
-			ADC_enable, 
-			expose, 
-			erase, 
-			start_time} = 6'b110000;
-	assign skip = 1;
-	
+	initial	begin
+			
+			assign {NRE_1, 
+				NRE_2, 
+				ADC_enable, 
+				expose, 
+				erase, 
+				start_time} = 6'b110010;
+		end
 	
 endmodule //FSM_control	
 
 module FSM_control_TB();
 	
-	reg [3:0] test_reg = 3'b0;
+	reg [4:0] test_reg = 4'b0;
 	
 	//in
-	logic init, clk, reset, ovf;
+	logic init, clk, reset, ovf4, ovf5;
 	//out
 	logic NRE_1, NRE_2, 
 	ADC_enable, 
@@ -135,10 +183,14 @@ module FSM_control_TB();
 	erase, 
 	start_time;
 	
+	reg [31:0] vectornum;
+	reg [4:0] testVectors[100:0];
+	
 	FSM_control fsmControl (init, 
 		clk, 
 		reset, 
-		ovf,
+		ovf4,
+		ovf5,
 		NRE_1, 
 		NRE_2, 
 		ADC_enable, 
@@ -151,16 +203,102 @@ module FSM_control_TB();
 		begin
 			assign clk = 1; #1; 
 			assign clk = 0; #1;
-		end  
+		end 
 	
-	//$display("comb", test_reg);
+	initial begin
+			$readmemb("FSM_control_testVectors.txt", testVectors);
+			vectornum = 0;
+			//reset = 1; #1; reset = 0;
+			
+			
+		end
+	//random testing
+	/*
 	always @(posedge clk)
-		
-		if (test_reg == 8) $finish;
-		else begin 
-				{init, reset, ovf} <= test_reg;
-				test_reg = test_reg + 3'b1;
-			end
+	if (test_reg == 16) $finish;
+	else begin 
+	{ovf4, ovf5, init} <= test_reg;
+	test_reg = test_reg + 4'b1;
+	end	 
+	
+	*/
+	
+	//test vector
+	
+	always @(posedge clk)
+		begin
+			{init, reset, ovf4, ovf5} =
+			testVectors[vectornum];
+		end
+	
+	always @(negedge clk)begin
+			/*
+			if (~reset) begin // skip during reset
+			vectornum = vectornum + 1;
+			
+			end	
+			*/
+			vectornum <= vectornum + 1;
+			if (testVectors[vectornum] === 4'bx) begin
+					$finish;
+				end
+			if (vectornum == 26) $finish; ;
+		end
 endmodule
 
+/*
+Read_R1: 
+// reading prosedure for row 0
+if(!row) begin
+// Go to next read stage
+if(ovf4) begin 
+row <= 1;
+skip <= 1;
+end
+// start adc
+else if (!skip & !NRE_1) begin 
+assign ADC_enable = 1;
 
+end
+// end adc
+else if (ADC_enable) begin 
+assign ADC_enable = 0;
+skip <= 1;
+end
+// start first read
+else if (!skip) begin 
+assign NRE_1 = 0;
+skip <= 1;
+
+end
+// wait skip cycle
+else  skip <= 0;
+end
+// reading prosedure for row 1
+else begin 
+// Go to next read stage
+if(ovf4 & NRE_2 & !ADC_enable) begin 
+nextState = Idle;
+skip <= 1;
+end
+// start adc
+else if (!skip & !NRE_2) begin 
+assign ADC_enable = 1;
+
+end
+// end adc
+else if (ADC_enable) begin 
+assign ADC_enable = 0;
+skip <= 1;
+end
+// start first read
+else if (!skip) begin 
+assign NRE_2 = 0;
+skip <= 1;		
+end
+// wait skip cycle
+else  skip <= 1;
+end
+
+
+*/
