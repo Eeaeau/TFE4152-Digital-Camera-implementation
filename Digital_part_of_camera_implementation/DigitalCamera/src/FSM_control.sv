@@ -22,10 +22,13 @@ module FSM_control (
 	ADC_enable, 
 	expose, 
 	erase, 
-	start_time, output statetype currentState, nextState
+	start_time
 	);
-	// 
+	// output statetype currentState, nextState
 	
+	statetype currentState, nextState;
+	
+	logic skip; // logic for skipping clk cycle
 	
 	always_ff @(posedge clk)
 	if(reset) begin 
@@ -33,6 +36,7 @@ module FSM_control (
 		end
 	else currentState = nextState;
 	
+	// implimentation on FSM stages
 	always_comb
 	case(currentState)
 		Idle: if(init & !reset) begin 
@@ -40,7 +44,7 @@ module FSM_control (
 					assign erase = 0;
 					assign expose = 1;
 				end
-			else begin 
+			else if(!skip) begin 
 					assign {NRE_1, 
 						NRE_2, 
 						ADC_enable, 
@@ -48,21 +52,61 @@ module FSM_control (
 						erase, 
 						start_time} = 6'b110000;
 				end
+			else assign skip = 0;
 		Exp: if(ovf) begin 
 					nextState = Read_R1;
 					assign expose = 0;
-					
+					assign skip = 1;					
 				end
-		Read_R1: if(ovf) begin 
+		Read_R1: 
+			// Go to next read stage
+			if(ovf & NRE_1 & !ADC_enable) begin 
 					nextState = Read_R2;
-					assign NRE_1 = 0;
+					assign skip = 1;
 				end
-		
-		Read_R2: if(reset | ovf) begin 
-					nextState = Idle;
-					assign NRE_2 = 0;
+			// start adc
+			else if (!skip & !NRE_1) begin 
+					assign ADC_enable = 1;
 					
 				end
+			// end adc
+			else if (ADC_enable) begin 
+					assign ADC_enable = 0;
+					assign skip = 1;
+				end
+			// start first read
+			else if (!skip) begin 
+					assign NRE_1 = 0;
+					assign skip = 1;
+					
+				end
+			// wait skip cycle
+			else assign skip = 1;
+		
+		Read_R2: 
+			// Go to next read stage
+			if(ovf & NRE_2 & !ADC_enable) begin 
+					nextState = Idle;
+					assign skip = 1;
+				end
+			// start adc
+			else if (!skip & !NRE_2) begin 
+					assign ADC_enable = 1;
+					
+				end
+			// end adc
+			else if (ADC_enable) begin 
+					assign ADC_enable = 0;
+					assign skip = 1;
+				end
+			// start first read
+			else if (!skip) begin 
+					assign NRE_2 = 0;
+					assign skip = 1;		
+				end
+			// wait skip cycle
+			else assign skip = 1;
+		
 		default: nextState = Idle;
 	endcase
 	
@@ -73,6 +117,7 @@ module FSM_control (
 			expose, 
 			erase, 
 			start_time} = 6'b110000;
+	assign skip = 1;
 	
 	
 endmodule //FSM_control	
