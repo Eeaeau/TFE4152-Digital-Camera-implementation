@@ -103,33 +103,44 @@ module FSM_control (
 							end
 					end
 				Read_R2:
-					// reading prosedure for row 1
-					// Go to next read stage 
+				
 					begin
-						assign NRE_1 = 1;
-						if(ovf4 & NRE_2 & !ADC_enable) begin 
-								//nextState = Idle;
+						assign expose = 0;
+						assign start_time = 0;
+						// reading prosedure for row 0
+						// Go to next read stage
+						if(ovf4) begin 
+								//nextState = Read_R2;
 								skip <= 1;
 							end
-						// start adc
-						else if (!skip & !NRE_2) begin 
-								assign ADC_enable = 1;
-								
-							end
+						//else if (ADC_enable) assign ADC_enable = 0;
 						// end adc
 						else if (ADC_enable) begin 
 								assign ADC_enable = 0;
 								skip <= 1;
 							end
+						// start adc
+						else if (!skip &!NRE_2) begin 
+								assign ADC_enable = 1;
+								skip <= 1;
+						end
+						else if (!NRE_2) begin 
+								assign NRE_2 = 1;
+								//skip <= 1;
+							end
 						// start first read
 						else if (!skip) begin 
 								assign NRE_2 = 0;
-								skip <= 1;		
-							end
+								//skip <= 1;	
+							end	
+						
 						// wait skip cycle
-						else  skip <= 0; 
+						else begin 
+								skip <= 0;
+								assign start_time =!start_time;
+							end
 					end
-				//default: nextState = Idle;
+					
 			endcase
 		end // always @(posedge clk)
 	
@@ -307,4 +318,36 @@ else  skip <= 1;
 end
 
 
-*/
+*/			
+
+
+
+/* old read row 2 
+
+// reading prosedure for row 1
+					// Go to next read stage 
+					begin
+						assign NRE_1 = 1;
+						if(ovf4 & NRE_2 & !ADC_enable) begin 
+								//nextState = Idle;
+								skip <= 1;
+							end
+						// start adc
+						else if (!skip & !NRE_2) begin 
+								assign ADC_enable = 1;
+								
+							end
+						// end adc
+						else if (ADC_enable) begin 
+								assign ADC_enable = 0;
+								skip <= 1;
+							end
+						// start first read
+						else if (!skip) begin 
+								assign NRE_2 = 0;
+								skip <= 1;		
+							end
+						// wait skip cycle
+						else  skip <= 0; 
+					end
+				//default: nextState = Idle;*/
