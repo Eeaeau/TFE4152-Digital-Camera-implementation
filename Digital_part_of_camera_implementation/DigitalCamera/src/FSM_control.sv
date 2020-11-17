@@ -6,7 +6,7 @@ A=idle, B=exposure, C=readout
 `define C 4'b0010
 */
 
-`timescale 1 ms / 1 us
+//`timescale 1 ms / 1 us
 
 typedef enum logic [2:0] {Idle, Exp, Read_R1, Read_R2} statetype;
 
@@ -23,14 +23,13 @@ module FSM_control (
 	ADC_enable, 
 	expose, 
 	erase, 
-	start_time
+	start_count
 	);
-	// output statetype currentState, nextState
 	statetype currentState, nextState;
 	
 	
-	logic skip, row; // logic for skipping clk cycle
-	
+	logic skip; // logic for skipping clk cycle
+	//row
 	always_ff @(posedge clk)
 	if(reset) begin 
 			currentState = Idle;
@@ -52,28 +51,27 @@ module FSM_control (
 								ADC_enable, 
 								expose, 
 								erase, 
-								start_time} = 6'b110010;
+								start_count} = 6'b110010;
 							skip <= 0;
-							row <=0;
+							//row <=0;
 						end
 				Exp: begin 
 						// start exposing
 						assign erase = 0;
 						assign expose = 1;
-						assign start_time = 1;	
+						assign start_count = 1;	
 						//skip <= 1;
-						row <=0;
 						skip <= 1;
 					end
 				
 				Read_R1: begin
 						assign expose = 0;
-						assign start_time = 0;
+						assign start_count = 0;
 						// reading prosedure for row 0
 						// Go to next read stage
 						if(ovf4) begin 
 								//nextState = Read_R2;
-								skip <= 1;
+								//skip <= 1;
 							end
 						//else if (ADC_enable) assign ADC_enable = 0;
 						// end adc
@@ -88,7 +86,7 @@ module FSM_control (
 						end
 						else if (!NRE_1) begin 
 								assign NRE_1 = 1;
-								//skip <= 1;
+								skip <= 0;
 							end
 						// start first read
 						else if (!skip) begin 
@@ -99,23 +97,24 @@ module FSM_control (
 						// wait skip cycle
 						else begin 
 								skip <= 0;
-								assign start_time =!start_time;
+								//assign start_count =!start_count;
 							end
 					end
 				Read_R2:
 				
 					begin
 						assign expose = 0;
-						assign start_time = 0;
+						assign start_count = 0;
 						// reading prosedure for row 0
-						// Go to next read stage
+						// Go to next read stage 
+						/*
 						if(ovf4) begin 
 								//nextState = Read_R2;
-								skip <= 1;
-							end
+								//skip <= 1;
+							end	*/
 						//else if (ADC_enable) assign ADC_enable = 0;
 						// end adc
-						else if (ADC_enable) begin 
+						if (ADC_enable) begin 
 								assign ADC_enable = 0;
 								skip <= 1;
 							end
@@ -126,7 +125,7 @@ module FSM_control (
 						end
 						else if (!NRE_2) begin 
 								assign NRE_2 = 1;
-								//skip <= 1;
+								skip <= 0;
 							end
 						// start first read
 						else if (!skip) begin 
@@ -137,7 +136,7 @@ module FSM_control (
 						// wait skip cycle
 						else begin 
 								skip <= 0;
-								assign start_time =!start_time;
+								//assign start_count =!start_time;
 							end
 					end
 					
@@ -153,7 +152,7 @@ module FSM_control (
 		Exp: if(ovf5) begin 
 					nextState = Read_R1;
 					//assign expose = 0;
-					//assign start_time = 0;
+					//assign start_count = 0;
 				end
 		
 		Read_R1: begin
@@ -179,7 +178,7 @@ module FSM_control (
 				ADC_enable, 
 				expose, 
 				erase, 
-				start_time} = 6'b110010;
+				start_count} = 6'b110010;
 		end
 	
 endmodule //FSM_control	
@@ -198,7 +197,7 @@ module FSM_control_TB();
 	ADC_enable, 
 	expose, 
 	erase, 
-	start_time;
+	start_count;
 	
 	reg [31:0] vectornum;
 	reg [4:0] testVectors[100:0];
@@ -213,7 +212,7 @@ module FSM_control_TB();
 		ADC_enable, 
 		expose, 
 		erase, 
-		start_time);
+		start_count);
 	
 	// generate clock
 	always

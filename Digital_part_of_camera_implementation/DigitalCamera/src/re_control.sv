@@ -1,21 +1,16 @@
 //
 //
-// Top-level verilog module example
+// Top-level verilog module
 //
-`timescale 1 ms / 1 us
+`timescale 100 us / 1 us
 
 module re_control(
 	input logic init, Exp_increase, Exp_decrease, reset, clk,
 	output logic expose, erase, ADC_enable, NRE_1, NRE_2);
 	
-	
-	//
-	// Your code goes here
-	//
+	// decleration of variables
 	logic start_time, reset_count, ovf4, ovf5;
 	reg [5:0] Countdown_time;
-	
-	statetype currentState, nextState;
 	
 	// FSM controll unit
 	FSM_control fsmControl (init, 
@@ -29,8 +24,6 @@ module re_control(
 		expose, 
 		erase, 
 		start_time);
-	//currentState,nextState 
-	
 	
 	// counter control unit
 	CTRL_exp_time ctrlExp( 
@@ -45,22 +38,12 @@ module re_control(
 		clk,
 		reset,
 		ovf5);
-		
+	
+	// Set timings of row read
 	always @(negedge expose) begin
-		#4 ovf4 <= 1; #1 ovf4<=0;
-		#4 ovf4 <= 1; #1 ovf4<=0;
+		#40 ovf4 <= 1; #10 ovf4<=0;
+		#30 ovf4 <= 1; #10 ovf4<=0;
 		end
-	
-	/*	
-	always @(posedge clk) begin
-	
-	if(!erase & !expose) begin
-	Countdown_time <= 5'b100;
-	end
-	
-	end
-	
-	*/
 	
 endmodule // re_control
 
@@ -83,8 +66,8 @@ module re_control_TB();
 	// generate clock
 	always
 		begin
-			assign clk = 1; #1; 
-			assign clk = 0; #1;
+			assign clk = 1; #5; 
+			assign clk = 0; #5;
 			//$display("Exp_time", Exp_time);
 		end
 	
@@ -93,9 +76,6 @@ module re_control_TB();
 	initial begin
 			$readmemb("re_control_testVectors.txt", testVectors);
 			vectornum = 0;
-			//reset = 1; #1; reset = 0;
-			
-			
 		end
 	
 	always @(posedge clk)
@@ -105,16 +85,11 @@ module re_control_TB();
 		end
 	
 	always @(negedge clk)begin
-			/*
-			if (~reset) begin // skip during reset
-			vectornum = vectornum + 1;
-			
-			end	
-			*/
+
 			vectornum <= vectornum + 1;
 			if (testVectors[vectornum] === 4'bx) begin
 					$finish;
 			end
-			if (vectornum == 24) $finish;
+			if (vectornum == 29) $finish;
 		end
-endmodule
+endmodule  // re_control_TB

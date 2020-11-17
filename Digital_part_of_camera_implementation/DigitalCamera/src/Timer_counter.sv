@@ -12,17 +12,21 @@ module Time_counter(
 	reg [5:0] q;
 	
 	
-	always_ff @(posedge clk)
+	always_ff @(posedge clk) begin
 	if(reset) 
 		q <= Exp_time;
 	else if (start) 
 		q <= q - 5'b1;
 	
-	always @(*)
+	
 		if (q < 5'b1) ovf = 1;
 		else ovf = 0;
 	
+	end
 	
+	
+	//always @(*)
+		
 	//assign ovf = (q <= 1) ? 1 : 0;
 	
 	//initial assign ovf = 0;	

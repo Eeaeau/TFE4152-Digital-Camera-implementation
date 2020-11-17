@@ -18,7 +18,7 @@ module CTRL_exp_time(
 	always @(posedge clk)
 		if (reset) Exp_time <= 5'b10;
 		else if(Exp_increase & (Exp_time < 30)) Exp_time <= Exp_time + 1;
-		else if (Exp_decrease & 2 < Exp_time) Exp_time <= Exp_time - 1;
+		else if (Exp_decrease & (2 < Exp_time)) Exp_time <= Exp_time - 1;
 	
 endmodule // CTRL_exp_time
 

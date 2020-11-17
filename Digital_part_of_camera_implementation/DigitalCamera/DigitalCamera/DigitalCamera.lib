@@ -1,42 +1,43 @@
-timestamp=1605395415477
+timestamp=1605559561860
 
 [~A]
 C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/CTRL_exp_time.sv=0*552460*553362
 C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/CTRL_time.sv=0*16117*16647
-C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/FSM_control.sv=0*796329*798110
+C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/FSM_control.sv=0*916756*918553
 C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/FSM_ex_control.sv=0*3852*4403
-C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/Timer_counter.sv=0*354435*355321
-C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/re_control.sv=0*642670*643890
+C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/Timer_counter.sv=0*884237*885139
+C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/Timer_counter.sv_CTRL_exp_time.sv=0*881255*882479
+C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/re_control.sv=0*913739*914975
 C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/re_control.v=0*436*1014
-CUSP_Counter=248
+CUSP_Counter=284
 LastVerilogToplevel=FSM_control_TB
-ModifyID=286
+ModifyID=322
 Version=74
 
 [~MFT]
-0=9|0DigitalCamera.mgf|798110|539591
-1=8|1DigitalCamera.mgf|1461317|1374080
-3=16|3DigitalCamera.mgf|911611|871698
+0=9|0DigitalCamera.mgf|918553|626418
+1=8|1DigitalCamera.mgf|1712400|1624397
+3=16|3DigitalCamera.mgf|1076013|1035993
 
 [$root]
-A/$root=22|||1*1454135
-BinI32/$root=3*905669
-SLP=3*905773
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216e42c608e2bad8b9c345b661ac8b9e34d
+A/$root=22|||1*1705528
+BinI32/$root=3*1070345
+SLP=3*1070449
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216b5d344e37623e8136703f42dffa847c1
 
 [CTRL_exp_time]
-A/CTRL_exp_time=22|../src/CTRL_exp_time.sv|4|1*945294
-BinI32/CTRL_exp_time=3*540105
+A/CTRL_exp_time=22|../src/CTRL_exp_time.sv|4|1*1636468
+BinI32/CTRL_exp_time=3*1027427
 R=../src/CTRL_exp_time.sv|4
-SLP=3*540807
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|7746c85b6f75222aaf89bc9f72db3ae5d885d19ae9bcc07a89e7b9d55dfa1f68c10e5bc8ffcc1256d878048cf676c935
+SLP=3*1028129
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|7746c85b6f75222aaf89bc9f72db3ae5d885d19ae9bcc07a89e7b9d55dfa1f683a3309c913acb0aa42bcd67b2d25d4c2
 
 [CTRL_exp_time_TB]
-A/CTRL_exp_time_TB=22|../src/CTRL_exp_time.sv|26|1*946552
-BinI32/CTRL_exp_time_TB=3*541180
+A/CTRL_exp_time_TB=22|../src/CTRL_exp_time.sv|26|1*1637726
+BinI32/CTRL_exp_time_TB=3*1028502
 R=../src/CTRL_exp_time.sv|26
-SLP=3*541891
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|7746c85b6f75222aaf89bc9f72db3ae56fbefa14ffea956b351501bcac402c4b6eab2988943c05a30df0d74c7a0d4564
+SLP=3*1029213
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|7746c85b6f75222aaf89bc9f72db3ae56fbefa14ffea956b351501bcac402c4b0dd3dac27eeebc3f46db55b89dc52830
 
 [CTRL_time]
 A/CTRL_time=22|../src/CTRL_time.sv|4|1*18731
@@ -46,19 +47,19 @@ SLP=3*9398
 Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|57be92c09e02b643869188ea1e6b560d3875e3a0a9d0f8a6f4079407858f023edbbe7d6707a9a29e9fa707a944ea00ac
 
 [FSM_control]
-A/FSM_control=22|../src/FSM_control.sv|13|1*1454573
-BinI32/FSM_control=3*905841
-CUSP=UnitScopePackage_248
+A/FSM_control=22|../src/FSM_control.sv|13|1*1705966
+BinI32/FSM_control=3*1070517
+CUSP=UnitScopePackage_284
 R=../src/FSM_control.sv|13
-SLP=3*907965
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|e2905295c085df376108e7dd9e6929ebb4dfa152630eb3e14ae42b0b2be7396b2e544aecf10d409382228646fccc4a98
+SLP=3*1072459
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|e2905295c085df376108e7dd9e6929ebb4dfa152630eb3e14ae42b0b2be7396bcec6b7585fb39522e26012d3ec2ec393
 
 [FSM_control_TB]
-A/FSM_control_TB=22|../src/FSM_control.sv|190|1*1458597
-BinI32/FSM_control_TB=3*909694
+A/FSM_control_TB=22|../src/FSM_control.sv|190|1*1709700
+BinI32/FSM_control_TB=3*1074096
 R=../src/FSM_control.sv|190
-SLP=3*910789
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|447251ae7c7b7b2c83aa9b27f3066033cfdcadb2170234d4527b622ef802063245bd933ea1711fbbe3843774957c7e1b
+SLP=3*1075191
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|447251ae7c7b7b2c83aa9b27f3066033cfdcadb2170234d4527b622ef80206321ed062191ba2473b8f03ed5d93fbf9ca
 
 [FSM_ex_control]
 A/FSM_ex_control=22|../src/FSM_ex_control.sv|4|1*3656
@@ -68,18 +69,18 @@ SLP=3*1123
 Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|6eea25c209747ab0df3c54983bfd0d75f171980b030435a74b69e1dfef09fb69bf2421bd7f6b403e2a7d73fdc8589a0e
 
 [Time_counter]
-A/Time_counter=22|../src/Timer_counter.sv|3|1*562796
-BinI32/Time_counter=3*341490
+A/Time_counter=22|../src/Timer_counter.sv|3|1*1640468
+BinI32/Time_counter=3*1030044
 R=../src/Timer_counter.sv|3
-SLP=3*342059
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|bffd092a79649b52401d42aa0f9b8cadc3ac00cb0d0f0d6da70a829dd046ab499db322d16ba67b06f7a3354db4fb88d9
+SLP=3*1030559
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|bffd092a79649b52401d42aa0f9b8cadc3ac00cb0d0f0d6da70a829dd046ab49afa1dc07a404b816fa2e28f39ec5ceb8
 
 [Time_counter_TB]
-A/Time_counter_TB=22|../src/Timer_counter.sv|37|1*564235
-BinI32/Time_counter_TB=3*342426
+A/Time_counter_TB=22|../src/Timer_counter.sv|37|1*1641818
+BinI32/Time_counter_TB=3*1030913
 R=../src/Timer_counter.sv|37
-SLP=3*343236
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|88f04e8fbca2311036cca6c2713b7994660d69d712458cd4e39b69e12402d022c51670307f6bd1b9a6558a4ff512e194
+SLP=3*1031723
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|88f04e8fbca2311036cca6c2713b7994660d69d712458cd4e39b69e12402d022dbda904e4d0f9396aed6edcf43f9620b
 
 [UnitScopePackage_100]
 A/UnitScopePackage_100=22|../src/Timer_counter.sv|0|1*530323
@@ -425,22 +426,6 @@ R=../src/re_control.sv|0
 SLP=3*45164
 Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53eb41e615236959a14b894b0ba59bdfaea0e5c0f8c85cee008371307910e8b4b61
 
-[UnitScopePackage_204]
-A/UnitScopePackage_204=22|../src/re_control.sv|0|1*1135939
-BinI32/UnitScopePackage_204=3*665644
-CUSP=1
-R=../src/re_control.sv|0
-SLP=3*665763
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53e82c2566568516074770b56e0620c631010631f9d827b9a08195d7168b3957bd3
-
-[UnitScopePackage_248]
-A/UnitScopePackage_248=22|../src/FSM_control.sv|0|1*1461317
-BinI32/UnitScopePackage_248=3*911492
-CUSP=1
-R=../src/FSM_control.sv|0
-SLP=3*911611
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53e2c74382ccd2b3e16f27ab1d9b82fa67616232572f53c435b0cf0a878aa640a3f
-
 [UnitScopePackage_27]
 A/UnitScopePackage_27=22|../src/CTRL_exp_time.sv|0|1*218131
 BinI32/UnitScopePackage_27=3*123355
@@ -449,6 +434,22 @@ R=../src/CTRL_exp_time.sv|0
 SLP=3*123473
 Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53ed4021acc6d4dbb52bdd1d16b74dc2a11fbba598b6ecc5ba4fbb4f05ff3a8d0d5
 
+[UnitScopePackage_273]
+A/UnitScopePackage_273=22|../src/Timer_counter.sv|0|1*1639439
+BinI32/UnitScopePackage_273=3*1029654
+CUSP=0
+R=../src/Timer_counter.sv|0
+SLP=3*1029773
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53e5916abe1a57d2a6bc1ee955fd3ebe2ba38f37ff32aed77e823e3e24018e76533
+
+[UnitScopePackage_274]
+A/UnitScopePackage_274=22|../src/Timer_counter.sv|0|1*1643445
+BinI32/UnitScopePackage_274=3*1032239
+CUSP=0
+R=../src/Timer_counter.sv|0
+SLP=3*1032358
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53ec1a1a8ee244849462f88f9d15499665a4316d25164df014a6dc271f9a8616fda
+
 [UnitScopePackage_28]
 A/UnitScopePackage_28=22|../src/CTRL_exp_time.sv|0|1*221999
 BinI32/UnitScopePackage_28=3*125973
@@ -456,6 +457,22 @@ CUSP=0
 R=../src/CTRL_exp_time.sv|0
 SLP=3*126091
 Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53e053288cc4217f7b14ad09bc9ddde3a7cdb58a87a18456b840e6c2aa50357f008
+
+[UnitScopePackage_283]
+A/UnitScopePackage_283=22|../src/re_control.sv|0|1*1704954
+BinI32/UnitScopePackage_283=3*1070126
+CUSP=1
+R=../src/re_control.sv|0
+SLP=3*1070245
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53ebb593f8d5cdabd4a24d6bbabc9cebbc3a6651dde713f268b364521799dd82138
+
+[UnitScopePackage_284]
+A/UnitScopePackage_284=22|../src/FSM_control.sv|0|1*1712400
+BinI32/UnitScopePackage_284=3*1075894
+CUSP=1
+R=../src/FSM_control.sv|0
+SLP=3*1076013
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53eac3572d6e1c6171c3bd5c1dd425869fa5fb7fdfc6113f058e6185a17f2d6c8ef
 
 [UnitScopePackage_29]
 A/UnitScopePackage_29=22|../src/CTRL_exp_time.sv|0|1*225873
@@ -1049,30 +1066,30 @@ SLP=3*8039
 Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|ec8a9ceecd40c97da6d5687ce01e262f26527262ddaa47cb266f3a3c4d9b973a6baef6b1d923284baf24cc35dc0ad776
 
 [re_control]
-A/re_control=22|../src/re_control.sv|7|1*1130716
-BinI32/re_control=3*663152
-CUSP=UnitScopePackage_204
+A/re_control=22|../src/re_control.sv|7|1*1699712
+BinI32/re_control=3*1067623
+CUSP=UnitScopePackage_283
 R=../src/re_control.sv|7
-SLP=3*663533
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|ab05d3b5e2058478d8e5fdef44d919e6b2b6c8279593bcaaccd0cb94f7187f10024c8420853ce2a5860ffefe56efadda
+SLP=3*1068011
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|ab05d3b5e2058478d8e5fdef44d919e6b2b6c8279593bcaaccd0cb94f7187f1066c6f136e7f65181edab8f4d7847f4fb
 
 [re_control_TB]
-A/re_control_TB=22|../src/re_control.sv|69|1*1133469
-BinI32/re_control_TB=3*663855
+A/re_control_TB=22|../src/re_control.sv|69|1*1702482
+BinI32/re_control_TB=3*1068333
 R=../src/re_control.sv|69
-SLP=3*664952
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|dd00d5c884894cac82950ca0003695d859d26f0b55162f41cc9102440ac3c0606646ae20c5f494680dcc0ef2f6d3a7ee
+SLP=3*1069430
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|dd00d5c884894cac82950ca0003695d859d26f0b55162f41cc9102440ac3c0601208c2d2292dfa84510d5d632d46cdaf
 
 [~U]
-$root=12|0*795249|
-CTRL_exp_time=12|0*551783|
-CTRL_exp_time_TB=12|0*552030||0x10
+$root=12|0*915675|
+CTRL_exp_time=12|0*880571|
+CTRL_exp_time_TB=12|0*880818||0x10
 CTRL_time=12|0*15881|
-FSM_control=12|0*795591|
-FSM_control_TB=12|0*795896||0x10
+FSM_control=12|0*916017|
+FSM_control_TB=12|0*916323||0x10
 FSM_ex_control=12|0*3594||0x10
-Time_counter=12|0*353763|
-Time_counter_TB=12|0*354008||0x10
+Time_counter=12|0*883557|
+Time_counter_TB=12|0*883802||0x10
 UnitScopePackage_100=12|0*331191||0x40200000
 UnitScopePackage_101=12|0*333777||0x40200000
 UnitScopePackage_102=12|0*336347||0x40200000
@@ -1116,10 +1133,12 @@ UnitScopePackage_154=12|0*483833||0x40200000
 UnitScopePackage_157=12|0*493144||0x40200000
 UnitScopePackage_176=12|0*552214||0x40200000
 UnitScopePackage_2=12|0*74954||0x40200000
-UnitScopePackage_204=12|0*642425||0x40200000
-UnitScopePackage_248=12|0*796075||0x40200000
 UnitScopePackage_27=12|0*145068||0x40200000
+UnitScopePackage_273=12|0*881002||0x40200000
+UnitScopePackage_274=12|0*883983||0x40200000
 UnitScopePackage_28=12|0*147642||0x40200000
+UnitScopePackage_283=12|0*913486||0x40200000
+UnitScopePackage_284=12|0*916502||0x40200000
 UnitScopePackage_29=12|0*150232||0x40200000
 UnitScopePackage_3=12|0*77146||0x40200000
 UnitScopePackage_30=12|0*152817||0x40200000
@@ -1194,5 +1213,5 @@ UnitScopePackage_97=12|0*323500||0x40200000
 UnitScopePackage_98=12|0*326053||0x40200000
 UnitScopePackage_99=12|0*328622||0x40200000
 counter=12|0*12171||0x10
-re_control=12|0*641873|
-re_control_TB=12|0*642214||0x10
+re_control=12|0*912932|
+re_control_TB=12|0*913275||0x10

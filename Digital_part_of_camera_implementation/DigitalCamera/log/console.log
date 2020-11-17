@@ -1,725 +1,21 @@
 # ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'FSM_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'CTRL_exp_time' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'Time_counter' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'UnitScopePackage_279' does not have a `timescale directive, but previous modules do.
 # ELBREAD: Elaboration time 0.0 [s].
 # ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'FSM_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'CTRL_exp_time' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'Time_counter' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'UnitScopePackage_279' does not have a `timescale directive, but previous modules do.
 # ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+FSM_control_TB FSM_control_TB
+asim -O5 +access +r +m+re_control_TB re_control_TB
 # ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Pass 2. Processing instantiations.
-# Pass 3. Processing behavioral statements.
-# Running Optimizer.
-# ELB/DAG code generating.
-# Info: VCP2113 Module \$root found in current working library.
-# Unit top modules: FSM_control_TB.
-# $root top modules: FSM_ex_control counter FSM_control_TB CTRL_exp_time_TB Time_counter_TB re_control_TB.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.3 [s]
-# SLP: Finished : 0.3 [s]
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  20:49, lørdag 14. november 2020
-#  Simulation has been initialized
-# add wave -noreg {/FSM_control_TB/test_reg}
-# add wave -noreg {/FSM_control_TB/init}
-# add wave -noreg {/FSM_control_TB/clk}
-# add wave -noreg {/FSM_control_TB/reset}
-# add wave -noreg {/FSM_control_TB/ovf4}
-# add wave -noreg {/FSM_control_TB/ovf5}
-# add wave -noreg {/FSM_control_TB/NRE_1}
-# add wave -noreg {/FSM_control_TB/NRE_2}
-# add wave -noreg {/FSM_control_TB/ADC_enable}
-# add wave -noreg {/FSM_control_TB/expose}
-# add wave -noreg {/FSM_control_TB/erase}
-# add wave -noreg {/FSM_control_TB/start_time}
-# add wave -noreg {/FSM_control_TB/vectornum}
-# add wave -noreg {/FSM_control_TB/testVectors}
-# 14 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (245): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#234_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-run
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Pass 2. Processing instantiations.
-# Pass 3. Processing behavioral statements.
-# Running Optimizer.
-# ELB/DAG code generating.
-# Info: VCP2113 Module \$root found in current working library.
-# Unit top modules: FSM_control_TB.
-# $root top modules: FSM_ex_control counter FSM_control_TB CTRL_exp_time_TB Time_counter_TB re_control_TB.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.3 [s]
-# SLP: Finished : 0.3 [s]
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5521 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  21:28, lørdag 14. november 2020
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (238): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#227_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-run
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Pass 2. Processing instantiations.
-# Pass 3. Processing behavioral statements.
-# Running Optimizer.
-# ELB/DAG code generating.
-# Info: VCP2113 Module \$root found in current working library.
-# Unit top modules: FSM_control_TB.
-# $root top modules: FSM_ex_control counter FSM_control_TB CTRL_exp_time_TB Time_counter_TB re_control_TB.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.2 [s]
-# SLP: Finished : 0.3 [s]
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  21:33, lørdag 14. november 2020
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+FSM_control_TB FSM_control_TB
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Finished. Using existing simulator library
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  21:34, lørdag 14. november 2020
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (240): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#229_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+FSM_control_TB FSM_control_TB
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Error: VCP2000 FSM_control.sv : (105, 23): Syntax error. Unexpected token: if[_IF].
-# Error: VCP2020 FSM_control.sv : (127, 20): begin...end pair(s) mismatch detected. 1 <end> tokens are missing.
-# Error: VCP2020 FSM_control.sv : (127, 20): module/macromodule...endmodule pair(s) mismatch detected. 1 <endmodule> tokens are missing.
-# Error: VCP2000 FSM_control.sv : (127, 20): Syntax error. Unexpected token: endcase[_ENDCASE].
-# Compile failure 4 Errors 0 Warnings  Analysis time: 0[s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Finished. Using existing simulator library
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  21:56, lørdag 14. november 2020
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (240): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#229_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+FSM_control_TB FSM_control_TB
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Pass 2. Processing instantiations.
-# Pass 3. Processing behavioral statements.
-# Running Optimizer.
-# ELB/DAG code generating.
-# Info: VCP2113 Module \$root found in current working library.
-# Unit top modules: FSM_control_TB.
-# $root top modules: FSM_ex_control counter FSM_control_TB CTRL_exp_time_TB Time_counter_TB re_control_TB.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.3 [s]
-# SLP: Finished : 0.3 [s]
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  21:57, lørdag 14. november 2020
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (244): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#233_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+FSM_control_TB FSM_control_TB
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Pass 2. Processing instantiations.
-# Pass 3. Processing behavioral statements.
-# Running Optimizer.
-# ELB/DAG code generating.
-# Info: VCP2113 Module \$root found in current working library.
-# Unit top modules: FSM_control_TB.
-# $root top modules: FSM_ex_control counter FSM_control_TB CTRL_exp_time_TB Time_counter_TB re_control_TB.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.3 [s]
-# SLP: Finished : 0.3 [s]
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  22:28, lørdag 14. november 2020
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (244): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#233_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-run
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Pass 2. Processing instantiations.
-# Pass 3. Processing behavioral statements.
-# Running Optimizer.
-# ELB/DAG code generating.
-# Info: VCP2113 Module \$root found in current working library.
-# Unit top modules: FSM_control_TB.
-# $root top modules: FSM_ex_control counter FSM_control_TB CTRL_exp_time_TB Time_counter_TB re_control_TB.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.2 [s]
-# SLP: Finished : 0.3 [s]
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  22:33, lørdag 14. november 2020
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (244): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#233_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-run
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Error: VCP2020 FSM_control.sv : (247, 10): begin...end pair(s) mismatch detected. 2 <end> tokens are missing.
-# Error: VCP2020 FSM_control.sv : (247, 10): case/x/z...endcase pair(s) mismatch detected. 1 <endcase> tokens are missing.
-# Error: VCP2000 FSM_control.sv : (247, 10): Syntax error. Unexpected token: endmodule[_ENDMODULE].
-# Compile failure 3 Errors 0 Warnings  Analysis time: 0[s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Finished. Using existing simulator library
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  23:18, lørdag 14. november 2020
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (244): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#233_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-run
-run
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+FSM_control_TB FSM_control_TB
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Finished. Using existing simulator library
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  23:26, lørdag 14. november 2020
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (244): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#233_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+FSM_control_TB FSM_control_TB
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Error: VCP2020 FSM_control.sv : (247, 10): begin...end pair(s) mismatch detected. 2 <end> tokens are missing.
-# Error: VCP2020 FSM_control.sv : (247, 10): case/x/z...endcase pair(s) mismatch detected. 1 <endcase> tokens are missing.
-# Error: VCP2000 FSM_control.sv : (247, 10): Syntax error. Unexpected token: endmodule[_ENDMODULE].
-# Compile failure 3 Errors 0 Warnings  Analysis time: 1[s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Finished. Using existing simulator library
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  23:32, lørdag 14. november 2020
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (244): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#233_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+FSM_control_TB FSM_control_TB
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Error: VCP2020 FSM_control.sv : (247, 10): begin...end pair(s) mismatch detected. 2 <end> tokens are missing.
-# Error: VCP2020 FSM_control.sv : (247, 10): case/x/z...endcase pair(s) mismatch detected. 1 <endcase> tokens are missing.
-# Error: VCP2000 FSM_control.sv : (247, 10): Syntax error. Unexpected token: endmodule[_ENDMODULE].
-# Compile failure 3 Errors 0 Warnings  Analysis time: 0[s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Finished. Using existing simulator library
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  23:43, lørdag 14. november 2020
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (244): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#233_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+FSM_control_TB FSM_control_TB
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Error: VCP2000 FSM_control.sv : (97, 29): Syntax error. Unexpected token: else[_ELSE].
-# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Finished. Using existing simulator library
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  23:46, lørdag 14. november 2020
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (244): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#233_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+FSM_control_TB FSM_control_TB
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Error: VCP2000 FSM_control.sv : (94, 29): Syntax error. Unexpected token: else[_ELSE].
-# Error: VCP2020 FSM_control.sv : (127, 20): module/macromodule...endmodule pair(s) mismatch detected. 1 <endmodule> tokens are missing.
-# Error: VCP2000 FSM_control.sv : (127, 20): Syntax error. Unexpected token: endcase[_ENDCASE].
-# Error: VCP2000 FSM_control.sv : (136, 28): Syntax error. Unexpected token: begin[_BEGIN].
-# Warning: VCP2515 FSM_control.sv : (137, 41): Undefined module: Read_R1 was used. Port connection rules will not be checked at such instantiations.
-# Compile failure 4 Errors 1 Warnings  Analysis time: 0[s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Finished. Using existing simulator library
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  23:50, lørdag 14. november 2020
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (244): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#233_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+FSM_control_TB FSM_control_TB
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Pass 2. Processing instantiations.
-# Pass 3. Processing behavioral statements.
-# Running Optimizer.
-# ELB/DAG code generating.
-# Info: VCP2113 Module \$root found in current working library.
-# Unit top modules: FSM_control_TB.
-# $root top modules: FSM_ex_control counter FSM_control_TB CTRL_exp_time_TB Time_counter_TB re_control_TB.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.3 [s]
-# SLP: Finished : 0.3 [s]
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  23:50, lørdag 14. november 2020
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (245): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#234_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+FSM_control_TB FSM_control_TB
-# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'FSM_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'CTRL_exp_time' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'Time_counter' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'UnitScopePackage_279' does not have a `timescale directive, but previous modules do.
 # ELBREAD: Elaboration time 0.0 [s].
 # VSIM: Stack memory: 32MB
 # VSIM: Retval memory: 32MB
@@ -738,6 +34,10 @@ alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
 # Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # done
 # ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'FSM_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'CTRL_exp_time' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'Time_counter' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'UnitScopePackage_281' does not have a `timescale directive, but previous modules do.
 # ELBREAD: Elaboration time 0.0 [s].
 # KERNEL: Main thread initiated.
 # KERNEL: Kernel process initialization phase.
@@ -749,227 +49,207 @@ alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
 # ELAB2: Create instances complete.
 # SLP: Started
 # SLP: Elaboration phase ...
+# SLP: Warning: re_control.sv (43): Length of connection (1) does not match the length of port "start" (6) on instance "/re_control_TB/dut/timeCounter".
+# SLP: Warning: re_control.sv (43): Length of connection (1) does not match the length of port "reset" (6) on instance "/re_control_TB/dut/timeCounter".
+# SLP: Warning: re_control.sv (43): Length of connection (1) does not match the length of port "clk" (6) on instance "/re_control_TB/dut/timeCounter".
 # SLP: Elaboration phase ... done : 0.0 [s]
 # SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.2 [s]
+# SLP: Generation phase ... done : 0.3 [s]
 # SLP: Finished : 0.3 [s]
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
+# SLP: 0 primitives and 12 (100.00%) other processes in SLP
+# SLP: 54 (98.18%) signals in SLP and 1 (1.82%) interface signals
 # ELAB2: Elaboration final pass complete - time: 0.3 [s].
 # KERNEL: SLP loading done - time: 0.0 [s].
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: SLP simulation initialization done - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
+# Allocation: Simulator allocated 5525 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
 # KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  23:51, lørdag 14. november 2020
+#  19:56, søndag 15. november 2020
+#  Simulation has been initialized
+# add wave -noreg {/re_control_TB/init}
+# add wave -noreg {/re_control_TB/Exp_increase}
+# add wave -noreg {/re_control_TB/Exp_decrease}
+# add wave -noreg {/re_control_TB/reset}
+# add wave -noreg {/re_control_TB/clk}
+# add wave -noreg {/re_control_TB/expose}
+# add wave -noreg {/re_control_TB/erase}
+# add wave -noreg {/re_control_TB/ADC_enable}
+# add wave -noreg {/re_control_TB/NRE_1}
+# add wave -noreg {/re_control_TB/NRE_2}
+# add wave -noreg {/re_control_TB/vectornum}
+# add wave -noreg {/re_control_TB/testVectors}
+# 12 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/re_control.sv
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM_control found in current working library.
+# Info: VCP2123 Package UnitScopePackage_281 found in current working library.
+# Info: VCP2113 Module CTRL_exp_time found in current working library.
+# Info: VCP2113 Module Time_counter found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_TB.
+# $root top modules: FSM_ex_control counter FSM_control_TB CTRL_exp_time_TB Time_counter_TB re_control_TB.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'FSM_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'CTRL_exp_time' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'Time_counter' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'UnitScopePackage_281' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: re_control.sv (43): Length of connection (1) does not match the length of port "start" (6) on instance "/re_control_TB/dut/timeCounter".
+# SLP: Warning: re_control.sv (43): Length of connection (1) does not match the length of port "reset" (6) on instance "/re_control_TB/dut/timeCounter".
+# SLP: Warning: re_control.sv (43): Length of connection (1) does not match the length of port "clk" (6) on instance "/re_control_TB/dut/timeCounter".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.2 [s]
+# SLP: Finished : 0.2 [s]
+# SLP: 0 primitives and 12 (100.00%) other processes in SLP
+# SLP: 54 (98.18%) signals in SLP and 1 (1.82%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5525 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
+#  19:57, søndag 15. november 2020
 #  Simulation has been initialized
 # Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
 run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (248): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#237_5@.
-# KERNEL: stopped at time: 53 ms
+# RUNTIME: Info: RUNTIME_0068 re_control.sv (118): $finish called.
+# KERNEL: Time: 295 us,  Iteration: 1,  Instance: /re_control_TB,  Process: @ALWAYS#107_5@.
+# KERNEL: stopped at time: 295 us
 # VSIM: Simulation has finished. There are no more test vectors to simulate.
 endsim
 # VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_TB re_control_TB
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'FSM_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'CTRL_exp_time' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'Time_counter' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'UnitScopePackage_281' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/re_control.sv
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM_control found in current working library.
+# Info: VCP2123 Package UnitScopePackage_281 found in current working library.
+# Info: VCP2113 Module CTRL_exp_time found in current working library.
+# Info: VCP2113 Module Time_counter found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_TB.
+# $root top modules: FSM_ex_control counter FSM_control_TB CTRL_exp_time_TB Time_counter_TB re_control_TB.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'FSM_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'CTRL_exp_time' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'Time_counter' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'UnitScopePackage_281' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: re_control.sv (43): Length of connection (1) does not match the length of port "start" (6) on instance "/re_control_TB/dut/timeCounter".
+# SLP: Warning: re_control.sv (43): Length of connection (1) does not match the length of port "reset" (6) on instance "/re_control_TB/dut/timeCounter".
+# SLP: Warning: re_control.sv (43): Length of connection (1) does not match the length of port "clk" (6) on instance "/re_control_TB/dut/timeCounter".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 0 primitives and 12 (100.00%) other processes in SLP
+# SLP: 54 (98.18%) signals in SLP and 1 (1.82%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5525 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
+#  21:25, søndag 15. november 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 re_control.sv (118): $finish called.
+# KERNEL: Time: 29500 us,  Iteration: 1,  Instance: /re_control_TB,  Process: @ALWAYS#107_5@.
+# KERNEL: stopped at time: 29500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: FSM_control_TB.
+# $root top modules: FSM_ex_control counter FSM_control_TB CTRL_exp_time_TB Time_counter_TB re_control_TB.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
 asim -O5 +access +r +m+FSM_control_TB FSM_control_TB
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
 # VSIM: Stack memory: 32MB
 # VSIM: Retval memory: 32MB
 # 
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Pass 2. Processing instantiations.
-# Pass 3. Processing behavioral statements.
-# Running Optimizer.
-# ELB/DAG code generating.
-# Info: VCP2113 Module \$root found in current working library.
-# Unit top modules: FSM_control_TB.
-# $root top modules: FSM_ex_control counter FSM_control_TB CTRL_exp_time_TB Time_counter_TB re_control_TB.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
 # KERNEL: Main thread initiated.
 # KERNEL: Kernel process initialization phase.
 # ELAB2: Elaboration final pass...
 # KERNEL: PLI/VHPI kernel's engine initialization done.
 # PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
 # ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
+# KERNEL: Time resolution set to 1ps.
 # ELAB2: Create instances complete.
 # SLP: Started
 # SLP: Elaboration phase ...
 # SLP: Elaboration phase ... done : 0.0 [s]
 # SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.2 [s]
-# SLP: Finished : 0.3 [s]
+# SLP: Generation phase ... done : 0.5 [s]
+# SLP: Finished : 0.5 [s]
 # SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  23:55, lørdag 14. november 2020
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (247): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#236_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+FSM_control_TB FSM_control_TB
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Pass 2. Processing instantiations.
-# Pass 3. Processing behavioral statements.
-# Running Optimizer.
-# ELB/DAG code generating.
-# Info: VCP2113 Module \$root found in current working library.
-# Unit top modules: FSM_control_TB.
-# $root top modules: FSM_ex_control counter FSM_control_TB CTRL_exp_time_TB Time_counter_TB re_control_TB.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.2 [s]
-# SLP: Finished : 0.3 [s]
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  23:56, lørdag 14. november 2020
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (247): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#236_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-run
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Pass 2. Processing instantiations.
-# Pass 3. Processing behavioral statements.
-# Running Optimizer.
-# ELB/DAG code generating.
-# Info: VCP2113 Module \$root found in current working library.
-# Unit top modules: FSM_control_TB.
-# $root top modules: FSM_ex_control counter FSM_control_TB CTRL_exp_time_TB Time_counter_TB re_control_TB.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.2 [s]
-# SLP: Finished : 0.3 [s]
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  23:56, lørdag 14. november 2020
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (247): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#236_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+FSM_control_TB FSM_control_TB
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Pass 2. Processing instantiations.
-# Pass 3. Processing behavioral statements.
-# Running Optimizer.
-# ELB/DAG code generating.
-# Info: VCP2113 Module \$root found in current working library.
-# Unit top modules: FSM_control_TB.
-# $root top modules: FSM_ex_control counter FSM_control_TB CTRL_exp_time_TB Time_counter_TB re_control_TB.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.2 [s]
-# SLP: Finished : 0.3 [s]
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# SLP: 27 (96.43%) signals in SLP and 1 (3.57%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
 # KERNEL: SLP loading done - time: 0.0 [s].
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
@@ -977,145 +257,12 @@ alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
 # KERNEL: Kernel process initialization done.
 # Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
 # KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  23:58, lørdag 14. november 2020
+#  14:21, tirsdag 17. november 2020
 #  Simulation has been initialized
 # Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (247): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#236_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-run
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Pass 2. Processing instantiations.
-# Pass 3. Processing behavioral statements.
-# Running Optimizer.
-# ELB/DAG code generating.
-# Info: VCP2113 Module \$root found in current working library.
-# Unit top modules: FSM_control_TB.
-# $root top modules: FSM_ex_control counter FSM_control_TB CTRL_exp_time_TB Time_counter_TB re_control_TB.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.3 [s]
-# SLP: Finished : 0.3 [s]
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  23:58, lørdag 14. november 2020
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (247): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#236_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+FSM_control_TB FSM_control_TB
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Pass 2. Processing instantiations.
-# Pass 3. Processing behavioral statements.
-# Running Optimizer.
-# ELB/DAG code generating.
-# Info: VCP2113 Module \$root found in current working library.
-# Unit top modules: FSM_control_TB.
-# $root top modules: FSM_ex_control counter FSM_control_TB CTRL_exp_time_TB Time_counter_TB re_control_TB.
-# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
-# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.2 [s]
-# SLP: Finished : 0.3 [s]
-# SLP: 0 primitives and 8 (100.00%) other processes in SLP
-# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\sebsk\Documents\Github\TFE4152-Digital-Camera-implementation\Digital_part_of_camera_implementation\DigitalCamera\src\wave.asdb
-#  00:00, søndag 15. november 2020
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 FSM_control.sv (247): $finish called.
-# KERNEL: Time: 53 ms,  Iteration: 1,  Instance: /FSM_control_TB,  Process: @ALWAYS#236_5@.
-# KERNEL: stopped at time: 53 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-run
-alog -O2 -sve -msg 5 -sv2k12 -work DigitalCamera $dsn/src/FSM_control.sv
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Pass 2. Processing instantiations.
-# Pass 3. Processing behavioral statements.
-# Running Optimizer.
-# ELB/DAG code generating.
-# Info: VCP2113 Module \$root found in current working library.
-# Unit top modules: FSM_control_TB.
-# $root top modules: FSM_ex_control counter FSM_control_TB CTRL_exp_time_TB Time_counter_TB re_control_TB.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1us.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... do
+# Warning: WAVEFORM: Object matching /re_control_TB/clk not found in C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /re_control_TB/reset not found in C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /re_control_TB/init not found in C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /re_control_TB/Exp_increase not found in C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /re_control_TB/Exp_decrease not found in C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /re_control_TB/expose not found in C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_im
