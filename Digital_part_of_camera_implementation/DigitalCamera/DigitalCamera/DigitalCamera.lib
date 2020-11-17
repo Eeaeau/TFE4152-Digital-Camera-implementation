@@ -1,29 +1,29 @@
-timestamp=1605559561860
+timestamp=1605627726829
 
 [~A]
 C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/CTRL_exp_time.sv=0*552460*553362
 C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/CTRL_time.sv=0*16117*16647
-C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/FSM_control.sv=0*916756*918553
+C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/FSM_control.sv=0*923866*925615
 C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/FSM_ex_control.sv=0*3852*4403
 C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/Timer_counter.sv=0*884237*885139
 C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/Timer_counter.sv_CTRL_exp_time.sv=0*881255*882479
 C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/re_control.sv=0*913739*914975
 C:/Users/sebsk/Documents/Github/TFE4152-Digital-Camera-implementation/Digital_part_of_camera_implementation/DigitalCamera/src/re_control.v=0*436*1014
-CUSP_Counter=284
+CUSP_Counter=286
 LastVerilogToplevel=FSM_control_TB
-ModifyID=322
+ModifyID=324
 Version=74
 
 [~MFT]
-0=9|0DigitalCamera.mgf|918553|626418
-1=8|1DigitalCamera.mgf|1712400|1624397
-3=16|3DigitalCamera.mgf|1076013|1035993
+0=9|0DigitalCamera.mgf|925615|631874
+1=8|1DigitalCamera.mgf|1727354|1639306
+3=16|3DigitalCamera.mgf|1087470|1047488
 
 [$root]
-A/$root=22|||1*1705528
-BinI32/$root=3*1070345
-SLP=3*1070449
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216b5d344e37623e8136703f42dffa847c1
+A/$root=22|||1*1720437
+BinI32/$root=3*1081840
+SLP=3*1081944
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c92164ef241f3b3d347adb3634c96b2ea2427
 
 [CTRL_exp_time]
 A/CTRL_exp_time=22|../src/CTRL_exp_time.sv|4|1*1636468
@@ -47,19 +47,19 @@ SLP=3*9398
 Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|57be92c09e02b643869188ea1e6b560d3875e3a0a9d0f8a6f4079407858f023edbbe7d6707a9a29e9fa707a944ea00ac
 
 [FSM_control]
-A/FSM_control=22|../src/FSM_control.sv|13|1*1705966
-BinI32/FSM_control=3*1070517
-CUSP=UnitScopePackage_284
+A/FSM_control=22|../src/FSM_control.sv|13|1*1720875
+BinI32/FSM_control=3*1082012
+CUSP=UnitScopePackage_286
 R=../src/FSM_control.sv|13
-SLP=3*1072459
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|e2905295c085df376108e7dd9e6929ebb4dfa152630eb3e14ae42b0b2be7396bcec6b7585fb39522e26012d3ec2ec393
+SLP=3*1083942
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|e2905295c085df376108e7dd9e6929ebb4dfa152630eb3e14ae42b0b2be7396b9b2733704862580ca33dafa21f8880db
 
 [FSM_control_TB]
-A/FSM_control_TB=22|../src/FSM_control.sv|190|1*1709700
-BinI32/FSM_control_TB=3*1074096
-R=../src/FSM_control.sv|190
-SLP=3*1075191
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|447251ae7c7b7b2c83aa9b27f3066033cfdcadb2170234d4527b622ef80206321ed062191ba2473b8f03ed5d93fbf9ca
+A/FSM_control_TB=22|../src/FSM_control.sv|170|1*1724630
+BinI32/FSM_control_TB=3*1085542
+R=../src/FSM_control.sv|170
+SLP=3*1086638
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|447251ae7c7b7b2c83aa9b27f3066033cfdcadb2170234d4527b622ef8020632152dface7b78720c1c9f25d88879b197
 
 [FSM_ex_control]
 A/FSM_ex_control=22|../src/FSM_ex_control.sv|4|1*3656
@@ -466,13 +466,13 @@ R=../src/re_control.sv|0
 SLP=3*1070245
 Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53ebb593f8d5cdabd4a24d6bbabc9cebbc3a6651dde713f268b364521799dd82138
 
-[UnitScopePackage_284]
-A/UnitScopePackage_284=22|../src/FSM_control.sv|0|1*1712400
-BinI32/UnitScopePackage_284=3*1075894
+[UnitScopePackage_286]
+A/UnitScopePackage_286=22|../src/FSM_control.sv|0|1*1727354
+BinI32/UnitScopePackage_286=3*1087351
 CUSP=1
 R=../src/FSM_control.sv|0
-SLP=3*1076013
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53eac3572d6e1c6171c3bd5c1dd425869fa5fb7fdfc6113f058e6185a17f2d6c8ef
+SLP=3*1087470
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53ef92bce4ab87df52ff7e0a229c018ff67058d94f34032e5a0ceebd68b9b7b4f72
 
 [UnitScopePackage_29]
 A/UnitScopePackage_29=22|../src/CTRL_exp_time.sv|0|1*225873
@@ -1081,12 +1081,12 @@ SLP=3*1069430
 Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|dd00d5c884894cac82950ca0003695d859d26f0b55162f41cc9102440ac3c0601208c2d2292dfa84510d5d632d46cdaf
 
 [~U]
-$root=12|0*915675|
+$root=12|0*922785|
 CTRL_exp_time=12|0*880571|
 CTRL_exp_time_TB=12|0*880818||0x10
 CTRL_time=12|0*15881|
-FSM_control=12|0*916017|
-FSM_control_TB=12|0*916323||0x10
+FSM_control=12|0*923127|
+FSM_control_TB=12|0*923433||0x10
 FSM_ex_control=12|0*3594||0x10
 Time_counter=12|0*883557|
 Time_counter_TB=12|0*883802||0x10
@@ -1138,7 +1138,7 @@ UnitScopePackage_273=12|0*881002||0x40200000
 UnitScopePackage_274=12|0*883983||0x40200000
 UnitScopePackage_28=12|0*147642||0x40200000
 UnitScopePackage_283=12|0*913486||0x40200000
-UnitScopePackage_284=12|0*916502||0x40200000
+UnitScopePackage_286=12|0*923612||0x40200000
 UnitScopePackage_29=12|0*150232||0x40200000
 UnitScopePackage_3=12|0*77146||0x40200000
 UnitScopePackage_30=12|0*152817||0x40200000

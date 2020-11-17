@@ -9,34 +9,26 @@ module Time_counter(
 	output logic 
 	ovf);
 	
+	// create internal registry
 	reg [5:0] q;
 	
 	
+	// countdown logic
 	always_ff @(posedge clk) begin
-	if(reset) 
-		q <= Exp_time;
-	else if (start) 
-		q <= q - 5'b1;
-	
-	
-		if (q < 5'b1) ovf = 1;
+		if(reset) 
+			q <= Exp_time; // reset time to input value
+		else if (start) 
+			q <= q - 5'b1; // decrease time
+	   	
+		// Set output value
+		if (q < 5'b1) ovf = 1; // countdown finished
 		else ovf = 0;
-	
+		
 	end
 	
 	
-	//always @(*)
-		
-	//assign ovf = (q <= 1) ? 1 : 0;
-	
-	//initial assign ovf = 0;	
-	
-	
-	//assign ovf = (q <= 5'd1) ? 1 : 0;	
-	
 endmodule // Time_counter 
 
-//module countDown(input logic clk, q)
 
 module Time_counter_TB();
 	
@@ -46,7 +38,6 @@ module Time_counter_TB();
 	
 	reg [5:0] Exp_time;
 	
-	
 	//reg [2:0] comb = 2'b0;
 	
 	Time_counter timeCounter (.Exp_time(Exp_time),
@@ -55,27 +46,14 @@ module Time_counter_TB();
 		.reset(reset),
 		.ovf(ovf));
 	
-	
 	// generate clock
 	always
 		begin
 			assign clk = 1; #1; 
 			assign clk = 0; #1;
-			//$display("Exp_time", Exp_time);
 		end  
 	
-	//$display("comb", comb);
-	/*
-	always @(posedge clk)
-	
-	if (comb == 8) $finish;
-	else begin 
-	{reset, start} <= comb;
-	comb = comb + 3'b1;
-	end
-	
-	*/
-	
+	// initiat output values
 	initial	begin
 			start = 0; reset = 1;
 			Exp_time = 5'b01000; #1;
@@ -83,8 +61,6 @@ module Time_counter_TB();
 			
 		end
 	always @(*)
-	 if (ovf == 1) $finish;
+		if (ovf == 1) $finish; // stop sim
 	
-	
-	
-endmodule
+endmodule // Time_counter_TB

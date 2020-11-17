@@ -41,8 +41,8 @@ module re_control(
 	
 	// Set timings of row read
 	always @(negedge expose) begin
-		#40 ovf4 <= 1; #10 ovf4<=0;
-		#30 ovf4 <= 1; #10 ovf4<=0;
+			#40 ovf4 <= 1; #10 ovf4<=0;
+			#30 ovf4 <= 1; #10 ovf4<=0;
 		end
 	
 endmodule // re_control
@@ -61,7 +61,7 @@ module re_control_TB();
 	
 	reg [31:0] vectornum;
 	reg [4:0] testVectors[100:0];
-						 
+	
 	
 	// generate clock
 	always
@@ -72,24 +72,27 @@ module re_control_TB();
 		end
 	
 	// at start of test, load vectors
-	// and pulse reset
 	initial begin
 			$readmemb("re_control_testVectors.txt", testVectors);
 			vectornum = 0;
 		end
 	
+	//reading new test vector
 	always @(posedge clk)
 		begin
 			{init, Exp_increase, Exp_decrease, reset} =
 			testVectors[vectornum];
 		end
 	
-	always @(negedge clk)begin
-
-			vectornum <= vectornum + 1;
+	// mangage test vector
+	always @(negedge clk) begin
+			
+			vectornum <= vectornum + 1;	// increment test vector 
+			
+			//Condition for stopping reading of test vectors
 			if (testVectors[vectornum] === 4'bx) begin
 					$finish;
-			end
+				end
 			if (vectornum == 29) $finish;
 		end
 endmodule  // re_control_TB
